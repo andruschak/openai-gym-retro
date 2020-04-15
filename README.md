@@ -8,7 +8,7 @@ The original [MarI/O](https://www.youtube.com/watch?v=qv6UVOQ0F44) youtube video
 
 I have also seen a few other examples of people using the Gym environment to model real life physics to train [thrust vectoring rockets](https://github.com/EmbersArc/gym_rocketLander) and [REX: Domestic Robot](https://github.com/nicrusso7/rex-gym/blob/master/README.md).
 
-If you have looked at my [Arcade Machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. So many fond memories of many classic games. This project let me relive some of those memories by watching the computer learn to solve the stage. 
+If you have looked at my [Arcade Machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. So many fond memories of many classic games. 
 
 ## hardware
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
@@ -25,7 +25,7 @@ Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909
 
 Each game integration has files listing memory locations for in-game variables, reward functions based on those variables, episode end conditions, savestates at the beginning of levels and a file containing hashes of ROMs that work with these files.
 
-ROMs are not included with gym-retro. The shasum's generally match with those found inside The Internet Archive - NoIntro Rom collection. Juat saying.
+ROMs are not included with gym-retro. The shasum's generally match with those found inside The Internet Archive - NoIntro Rom collection. Just saying.
 
 ### NeuroEvolution of Augmenting Topologies (NEAT)
 [neat-python](https://github.com/CodeReclaimers/neat-python) is a genetic algorithm for the generation of evolving artificial neural networks. Generally speaking, the algorithm is modelled after natural evolution. We start with an indiviual with no training and throughout generations of evolution and natural selection (breeding those individuals with the highest fitness score) hope to end up with one that can finish the level.  
