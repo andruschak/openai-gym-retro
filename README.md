@@ -11,6 +11,8 @@ I have also seen a few other examples of people using the Gym environment to mod
 
 If you have looked at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
 
+***
+
 ## hardware
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
 
@@ -37,11 +39,11 @@ To evolve a solution to a problem, provide a fitness function which computes a s
 The reproduction and mutation operations may add nodes and/or connections to genomes, so as the algorithm proceeds genomes (and the neural networks they produce) may become more and more complex. When the preset number of generations is reached, or when at least one individual (for a fitness criterion function of max; others are configurable) exceeds the user-specified fitness threshold, the algorithm terminates.
 
 ### OpenCV
-[OpenCV](https://opencv.org/) is an open source computer vision library. It is amazing in it's own right. I have played with opencv a few times over the years - [skeletal detection - Kinect/SDK/OpenCV](https://www.youtube.com/watch?v=bBsXQb-j9vk) and [facial recognition](https://www.youtube.com/watch?v=onjW4iA1Ai4) 
+[OpenCV](https://opencv.org/) is an open source computer vision library. It is amazing in it's own right. I have played with opencv a few times over the years - [skeletal detection - Kinect/SDK](https://www.youtube.com/watch?v=bBsXQb-j9vk) and [facial recognition](https://www.youtube.com/watch?v=onjW4iA1Ai4) 
 
 In this case we will use it to transform each frame of the game into a lower resolution, grayscale image making it easier to process. 
 
-
+***
 
 ## setting up the environment
 
@@ -50,7 +52,7 @@ windows
 choco install xming
 ```
 
-wsl (windows subsystem for linux)
+ubuntu wsl (windows subsystem for linux)
 ```
 sudo apt-get update
 sudo apt install python3-pip
@@ -58,7 +60,7 @@ sudo apt install python3-opencv // pip install resulted in core dump
 
 pip3 install gym-retro
 pip3 install neat-python
-~~pip3 install opencv-python~~ // did not work
+pip3 install opencv-python // did not work, resulted in segfaults
 ```
 
 ### default paths for retro
@@ -71,16 +73,24 @@ pip3 install neat-python
 ### running the simulation
 lets run a demo to see if everything is working. We will try and load an example agent (random button presses) to play Super Mario Bros Level 1-1. Since we are running this in windows we need to start our x-server app and export the linux DISPLAY.
 
-`start xming (windows)`
+windows
+````
+start xming
+```
 
+ubuntu wsl
 ```
 export DISPLAY=:0.0
 python3 /examples/random_agent.py --game SuperMarioBros-Nes --state Level1-1
 
 ```
 
+## success!
+it's a me, mario
 
+![random mariobros](https://github.com/andruschak/openai-gym-retro/raw/master/images/mario-random-test.gif "random mariobros")
 
+***
 
 ## building the AI
 
