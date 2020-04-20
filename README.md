@@ -74,7 +74,7 @@ pip3 install opencv-python // did not work, resulted in segfaults
 lets run a demo to see if everything is working. We will try and load an example agent (random button presses) to play Super Mario Bros Level 1-1. Since we are running this in windows we need to start our x-server app and export the linux DISPLAY.
 
 windows
-````
+```
 start xming
 ```
 
