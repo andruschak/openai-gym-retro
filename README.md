@@ -86,9 +86,9 @@ python3 /examples/random_agent.py --game SuperMarioBros-Nes --state Level1-1
 ```
 
 ## success!
-it's a me, mario
+it's a me, mario!
 
-![random mariobros](https://github.com/andruschak/openai-gym-retro/raw/master/images/mario-random-test.gif "random mariobros")
+![random mariobros](https://github.com/andruschak/openai-gym-retro/raw/master/images/mario-random.gif "random mariobros")
 
 ***
 
