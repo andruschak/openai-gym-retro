@@ -1,17 +1,30 @@
 # openai-gym-retro
 
-## what is this all about?
-Training an AI to beat classic video games using Open-AI gym-retro & NEAT
+## what is this all about
+Leveraging machine learning, specifically reinforcement learning, to train the computer to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
-This project touches on so many cool topics; `classic video games`, `roms & emulation`, `AI`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `computer vision`, `python`, `linux on windows.` 
+This project touches on so many cool topics; `classic video games`, `emulation`, `machine learning`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `computer vision`, `python`, `linux on windows.` 
 
 The original [marI/O](https://www.youtube.com/watch?v=qv6UVOQ0F44) youtube video inspired me to learn about neuro-networks and the ability to apply them in the same way. There are dozens of great tutorials on this topic online (references below). Much of the heavy lifting is done for us by utilizing open source libraries.
 
-I have also seen a few other examples of people using the Gym environment to model real life physics to train [thrust vectoring rockets](https://github.com/EmbersArc/gym_rocketLander) and [rex: domestic robot](https://github.com/nicrusso7/rex-gym/blob/master/README.md).
+I have also seen a few other examples of people using gym environments to model real life physics to train [thrust vectoring rockets](https://github.com/EmbersArc/gym_rocketLander) and [rex the domestic robot](https://github.com/nicrusso7/rex-gym/blob/master/README.md).
 
 If you have looked at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
 
 ***
+
+# definitions
+
+### reinforcement learning (RL)
+From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning."
+
+### NEAT
+### Recurrent Neural Network (RNN)
+A recurrent neural network is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state to process variable length sequences of inputs.
+
+### Proximal Policy Optimization (PPO)
+
+### Actor&Critic (A&C)
 
 ## hardware
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
@@ -24,14 +37,14 @@ Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909
 
 
 ### OpenAI Gym Retro
-[OpenAI Gym Retro](https://openai.com/blog/gym-retro/) lets you turn classic video games into Gym environments for reinforcement learning and comes with integrations for ~1000 games. It uses various emulators that support the Libretro API.
+[OpenAI Gym Retro](https://openai.com/blog/gym-retro/) enables an interface between python and emulated video games. It sets up an environment for reinforcement learning and comes with integrations for ~1000 games. It uses various emulators that support the Libretro API.
 
 Each game integration has files listing memory locations for in-game variables, reward functions based on those variables, episode end conditions, savestates at the beginning of levels and a file containing hashes of ROMs that work with these files.
 
 ROMs are not included with gym-retro. The shasum's ~~generally~~ rarely match with those found inside The Internet Archive - NoIntro Rom collection. However, after you import, you can modify the rom.sha file to match the shasum of the file you imported (it will have been renamed to rom.nes).  
 
 ### NeuroEvolution of Augmenting Topologies (NEAT)
-[neat-python](https://github.com/CodeReclaimers/neat-python) is a genetic algorithm for the generation of evolving artificial neural networks. Generally speaking, the algorithm is modelled after natural evolution. We start with an indiviual with no training and throughout generations of evolution and natural selection (breeding those individuals with the highest fitness score) hope to end up with one that can finish the level.  
+[neat-python](https://github.com/CodeReclaimers/neat-python) is a genetic algorithm for the generation of evolving artificial neural networks. We can think of this as as a system being modelled after natural evolution. 
 
 Summarized from the [NEAT overview](https://neat-python.readthedocs.io/en/latest/neat_overview.html):
 To evolve a solution to a problem, provide a fitness function which computes a single real number (increase in x_position for us) indicating the quality of an individual genome: better ability to solve the problem means a higher score. i.e. the further the game character makes it through the level, the higher the fitness score is. The algorithm progresses through a user-specified number of generations (in our case ~30), with each generation being produced by reproduction and mutation of the most fit individuals of the previous generation.
@@ -92,11 +105,45 @@ it's a me, mario!
 
 ***
 
-## building the AI
+# basic outline and concepts
+now that we have successfully installed our environment, lets get some basic concepts down and then move onto code.
 
+## getting started
+I highly suggest checking out the [Getting Started](https://retro.readthedocs.io/en/latest/getting_started.html) guide for retro.
+
+## integrations
+
+### data.json
+
+### scenario.json
+
+### feed-forward
+
+### basic code outline - example/random_agent.py 
+
+
+```
+import retro
+
+def main():
+    env = retro.make(game='SuperMarioBros-Nes')
+    obs = env.reset()
+    while True:
+        obs, rew, done, info = env.step(env.action_space.sample())
+        env.render()
+        if done:
+            obs = env.reset()
+    env.close()
+
+
+if __name__ == "__main__":
+    main()
+
+```
 
 ### reflection on what we've covered
 
 
 ### references
 [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44)
+[Wikipedia](www.wikipedia.org)
