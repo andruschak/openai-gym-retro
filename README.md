@@ -1,6 +1,6 @@
 # openai-gym-retro
 
-# 1. what is this all about
+# part 1. what is this all about
 Leveraging machine learning, specifically reinforcement learning, to train the computer to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
 ## inspiration
@@ -18,7 +18,7 @@ Finally, this project touches on so many cool topics; `classic video games`, `em
 
 ***
 
-# 2. definitions 
+# part 2. definitions 
 
 ### reinforcement learning (RL)
 From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning."
@@ -34,7 +34,7 @@ Useful in games with with frequent and incremental rewards where most of the dif
 
 ***
 
-# 3. environment
+# part 3. environment
 
 ## hardware
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
@@ -117,19 +117,82 @@ it's a me, mario!
 
 ***
 
-# 4. basic outline and concepts
-Now that we have successfully installed our environment, lets get some basic concepts down and then move onto code.
-
-## getting started
-I highly suggest checking out the [Getting Started](https://retro.readthedocs.io/en/latest/getting_started.html) guide for retro.
+# part 4. basic outline and concepts
+Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take account coin + xscrollLo for example.
 
 ## integrations
+Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions: start state, reward function, and done condition. For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
+data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. 
+
+```
+{
+  "info": {
+    "coins": {
+      "address": 1886,
+      "type": "|u1"
+    },
+    "levelHi": {
+      "address": 1887,
+      "type": "|i1"
+    },
+    "levelLo": {
+      "address": 1884,
+      "type": "|i1"
+    },
+    "lives": {
+      "address": 1882,
+      "type": "|i1"
+    },
+    "score": {
+      "address": 2013,
+      "type": ">n6"
+    },
+    "scrolling": {
+      "address": 1912,
+      "type": "|i1"
+    },
+    "time": {
+      "address": 2040,
+      "type": ">n3"
+    },
+    "xscrollHi": {
+      "address": 1818,
+      "type": "|u1"
+    },
+    "xscrollLo": {
+      "address": 1820,
+      "type": "|u1"
+    }
+  }
+}
+```
 
 ### scenario.json
+The scenario.json file contains the done and reward game conditions based on the variables from data.json.
 
-### basic code outline - example/random_agent.py 
+```
+{
+  "done": {
+    "variables": {
+      "lives": {
+        "op": "equal",
+        "reference": -1
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "xscrollLo": {
+        "reward": 1
+      }
+    }
+  }
+}
+```
+
+### basic code outline (from the getting started guide)
 
 
 ```
@@ -159,17 +222,17 @@ if __name__ == "__main__":
 
 ***
 
-# 5. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
+# part 5. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
 
 ### feed-forward
 
 ***
 
-# 6. Fighting Games - Street Fighter II (SNES)
+# part 6. Fighting Games - Street Fighter II (SNES)
 
 ***
 
-# X. reflection on what we've covered
+# part X. reflection on what we've covered
 
 ### challenges
 Successfully playing games isnt always easy. Platformer games like Mario and Sonic can achieve success simply by increasing your x-coordinates until you reach a target. But what about games that require the player to solve unique puzzles or back track after finding a key later on?
