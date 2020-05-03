@@ -1,7 +1,7 @@
 # openai-gym-retro
 
 # part 1. what is this all about
-Leveraging machine learning, specifically reinforcement learning, to train the computer to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
+Leveraging machine learning, specifically reinforcement learning, to train a bot to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
 ## inspiration
 There are several reasons I am interested in this project:
@@ -12,16 +12,16 @@ Since the release of open-ai's framework, I have also seen other examples of peo
 
 If you have looked at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
 
-To keep learning and programming. Expand
+To keep learning and continue programming (use it or lose it).
 
 Finally, this project touches on so many cool topics; `classic video games`, `emulation`, `machine learning`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `computer vision`, `python3`, `linux on windows.` 
 
 ***
 
-# part 2. definitions 
+# part 2. some definitions
 
 ### reinforcement learning (RL)
-From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning."
+From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
 
 ### NEAT
 ### Recurrent Neural Network (RNN)
@@ -55,13 +55,15 @@ Each game integration has files listing memory locations for in-game variables, 
 
 ROMs are not included with gym-retro. The shasum's ~~generally~~ rarely match with those found inside The Internet Archive - NoIntro Rom collection. However, after you import, you can modify the rom.sha file to match the shasum of the file you imported (it will have been renamed to rom.nes).  
 
+I highly encourage anyone reading this to check out the [Getting Started Guide](https://retro.readthedocs.io/en/latest/getting_started.html). It goes through this whole process in a lot more detail. 
+
 ### NeuroEvolution of Augmenting Topologies (NEAT)
-[neat-python](https://github.com/CodeReclaimers/neat-python) is a genetic algorithm for the generation of evolving artificial neural networks. We can think of this as as a system being modelled after natural evolution. 
+[neat-python](https://github.com/CodeReclaimers/neat-python) is a genetic algorithm for the generation of evolving artificial neural networks. We can think of this as a system being modelled after natural evolution. 
 
 Summarized from the [NEAT overview](https://neat-python.readthedocs.io/en/latest/neat_overview.html):
-To evolve a solution to a problem, provide a fitness function which computes a single real number (increase in x_position for us) indicating the quality of an individual genome: better ability to solve the problem means a higher score. i.e. the further the game character makes it through the level, the higher the fitness score is. The algorithm progresses through a user-specified number of generations (in our case ~30), with each generation being produced by reproduction and mutation of the most fit individuals of the previous generation.
+To evolve a solution to a problem, provide a fitness function which computes a single real number (increase in x_position for us) indicating the quality of an individual genome; i.e. the further the game character makes it through the level, the higher the fitness score is. The algorithm progresses through a user-specified number of generations (in our case ~30), with each generation being produced by reproduction and mutation of the most fit individuals of the previous generation.
 
-The reproduction and mutation operations may add nodes and/or connections to genomes, so as the algorithm proceeds genomes (and the neural networks they produce) may become more and more complex. When the preset number of generations is reached, or when at least one individual (for a fitness criterion function of max; others are configurable) exceeds the user-specified fitness threshold, the algorithm terminates.
+These reproduction and mutation operations may add nodes and/or connections to genomes, so as the algorithm proceeds genomes (and the neural networks they produce) may become more and more complex. When the preset number of generations is reached, or when at least one individual (for a fitness criterion function of max; others are configurable) exceeds the user-specified fitness threshold, the algorithm terminates.
 
 ### OpenCV
 [OpenCV](https://opencv.org/) is an open source computer vision library. It is amazing in it's own right. I have played with opencv a few times over the years - [skeletal detection - Kinect/SDK](https://www.youtube.com/watch?v=bBsXQb-j9vk) and [facial recognition](https://www.youtube.com/watch?v=onjW4iA1Ai4) 
@@ -193,12 +195,13 @@ The scenario.json file contains the done and reward game conditions based on the
 ```
 
 ### basic code outline (from the getting started guide)
-
+Basic code to 
 
 ```
 import retro
 
 def main():
+
     env = retro.make(game='SuperMarioBros-Nes')
     obs = env.reset()
     while True:
@@ -214,11 +217,121 @@ if __name__ == "__main__":
 
 ```
 
+### NEAT config & feedforward
+The NEAT configuration file defines the evolutionary process for our bot. It uses old school windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
+
+```
+# NEAT file
+
+[NEAT]
+# fitness_criterion:    the function used to compute the termination criterion from the set of genome fitnesses (max, min, mean)
+# fitness_threshold:	when the fitness_critera meets this threshold the evolution process will terminate
+# pop_size:	 	        the amount of individuals in each generation
+fitness_criterion     = max
+fitness_threshold     = 100000
+pop_size              = 30
+reset_on_extinction   = True
+
+[DefaultStagnation]
+# species_fitness_func: the function used to compute species fitness (max, min, mean, median)
+# max_stagnation:       species with no improvement in > number of generations are stagnant and removed (def: 15)
+# species_elitism:      number of species that will be protected from stagnation; prevents extinction events (def: 2)
+species_fitness_func = max
+max_stagnation       = 50
+species_elitism      = 0
+
+[DefaultReproduction]
+# elitism:               the number of most-fit individuals who will be preserved from one generation to the next (def: 0)
+# survival_threshold:    the fraction for each species allowed to reproduce each generation (def: 0.2)
+# min_species_size:       
+elitism            = 1
+survival_threshold = 0.3
+min_species_size   = 2
+
+[DefaultSpeciesSet]
+# compatibility_threshold:  
+compatibility_threshold = 2.5
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.05
+activation_options      = sigmoid gauss 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = random
+aggregation_mutate_rate = 0.05
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 30.0
+bias_min_value          = -30.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.5
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.2
+
+feed_forward            = False
+#initial_connection      = unconnected
+initial_connection      = partial_nodirect 0.5
+
+# node add/remove rates
+node_add_prob           = 0.5
+node_delete_prob        = 0.5
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1120
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+
+```
+
+### NEAT configuration
+
+```
+config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, 'config')
+pop = neat.Population(config)
+```
+
 ### pickling 
 
 ### saving
 
 ### replaying
+The pickle file will be a series of key presses that we can load and replay through retro.  
 
 ***
 
