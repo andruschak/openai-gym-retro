@@ -1,5 +1,6 @@
 ## ran 200 gens and it cut off the first 2.5... added in new just for completion
 
+
 tyler@kary:~/.local/lib/python3.6/site-packages/retro/data/stable/SuperMarioBros-Nes$ time python3 bot.py
 
  ****** Running generation 0 ******

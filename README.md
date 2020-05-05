@@ -245,9 +245,9 @@ max_stagnation       = 50
 species_elitism      = 0
 
 [DefaultReproduction]
-# elitism:               the number of most-fit individuals who will be preserved from one generation to the next (def: 0)
-# survival_threshold:    the fraction for each species allowed to reproduce each generation (def: 0.2)
-# min_species_size:       
+# elitism:              the number of most-fit individuals who will be preserved from one generation to the next (def: 0)
+# survival_threshold:   the fraction for each species allowed to reproduce each generation (def: 0.2)
+# min_species_size:     minimum number of genomes per species after reproduction (def: 2)        
 elitism            = 1
 survival_threshold = 0.3
 min_species_size   = 2
