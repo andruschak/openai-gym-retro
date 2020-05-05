@@ -77,6 +77,10 @@ In this case we will use it to transform each frame of the game into a lower res
 windows
 ```
 choco install xming
+
+# optional: [cli method](https://docs.microsoft.com/en-us/windows/wsl/install-win10) for installing wsl and download/setup ubuntu 16.04 LTS
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
 ```
 
 ubuntu wsl (windows subsystem for linux)
@@ -123,7 +127,7 @@ it's a me, mario!
 Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take account coin + xscrollLo for example.
 
 ## integrations
-Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions: start state, reward function, and done condition. For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
+Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
 data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. 
@@ -217,16 +221,16 @@ if __name__ == "__main__":
 
 ```
 
-### NEAT config & feedforward
+### NEAT config 
 The NEAT configuration file defines the evolutionary process for our bot. It uses old school windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
 
 ```
-# NEAT file
+# NEAT configuration file
 
 [NEAT]
 # fitness_criterion:    the function used to compute the termination criterion from the set of genome fitnesses (max, min, mean)
 # fitness_threshold:	when the fitness_critera meets this threshold the evolution process will terminate
-# pop_size:	 	        the amount of individuals in each generation
+# pop_size:             the amount of individuals in each generation
 fitness_criterion     = max
 fitness_threshold     = 100000
 pop_size              = 30
@@ -285,8 +289,9 @@ conn_delete_prob        = 0.1
 enabled_default         = True
 enabled_mutate_rate     = 0.2
 
+# feed_forward
 feed_forward            = False
-#initial_connection      = unconnected
+#initial_connection     = unconnected
 initial_connection      = partial_nodirect 0.5
 
 # node add/remove rates
@@ -322,13 +327,15 @@ weight_replace_rate     = 0.1
 ### NEAT configuration
 
 ```
-config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, 'config')
+config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, 'neat-config.cfg')
 pop = neat.Population(config)
 ```
 
+### statistics and saving 
+
+
 ### pickling 
 
-### saving
 
 ### replaying
 The pickle file will be a series of key presses that we can load and replay through retro.  
@@ -337,9 +344,7 @@ The pickle file will be a series of key presses that we can load and replay thro
 
 # part 5. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
 
-### feed-forward
-
-***
+### 
 
 # part 6. Fighting Games - Street Fighter II (SNES)
 
