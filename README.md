@@ -199,7 +199,7 @@ The scenario.json file contains the done and reward game conditions based on the
 ```
 
 ### basic code outline (from the getting started guide)
-Basic code to load the game, create and render the environment.
+Basic code to load the game, create and render the environment. Added in comments to make it easier to understand.
 
 
 ```
