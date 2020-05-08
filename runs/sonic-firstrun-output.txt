@@ -1,0 +1,2390 @@
+tyler@kary:~/.local/lib/python3.6/site-packages/retro/data/stable/SonicTheHedgehog2-Genesis$ time python3 bot.py
+
+ ****** Running generation 0 ******
+
+/home/tyler/.local/lib/python3.6/site-packages/neat/aggregations.py:18: RuntimeWarning: overflow encountered in double_scalars
+  return reduce(mul, x, 1.0)
+/home/tyler/.local/lib/python3.6/site-packages/neat/aggregations.py:18: RuntimeWarning: invalid value encountered in double_scalars
+  return reduce(mul, x, 1.0)
+Tick/Tock:  0 , Genome:  1 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  2 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  3 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  4 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  5 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  6 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  7 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  8 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  9 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  10 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  11 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  12 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  13 , Fitness Achieved:  5946.0
+Tick/Tock:  0 , Genome:  14 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  15 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  16 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  17 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  18 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  19 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  20 , Fitness Achieved:  2686.0
+Tick/Tock:  0 , Genome:  21 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  22 , Fitness Achieved:  2097.0
+Tick/Tock:  0 , Genome:  23 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  24 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  25 , Fitness Achieved:  18.0
+Tick/Tock:  0 , Genome:  26 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  27 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  28 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  29 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  30 , Fitness Achieved:  0.0
+Population's average fitness: 1124.50000 stdev: 3168.07978
+Best fitness: 16700.00000 - size: (12, 6726) - species 2 - id 29
+Average adjusted fitness: 0.057
+Mean genetic distance 2.247, standard deviation 0.490
+Population of 30 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    15   5946.0    0.103     0
+     2    0    10  16700.0    0.068     0
+     3    0     5      0.0    0.000     0
+Total extinctions: 0
+Generation time: 381.268 sec
+
+ ****** Running generation 1 ******
+
+Tick/Tock:  0 , Genome:  26 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  31 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  13 , Fitness Achieved:  5859.0
+Tick/Tock:  0 , Genome:  32 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  33 , Fitness Achieved:  16698.0
+Tick/Tock:  0 , Genome:  34 , Fitness Achieved:  1261.0
+Tick/Tock:  0 , Genome:  35 , Fitness Achieved:  1680.0
+Tick/Tock:  0 , Genome:  36 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  37 , Fitness Achieved:  2.0
+Tick/Tock:  0 , Genome:  38 , Fitness Achieved:  118.0
+Tick/Tock:  0 , Genome:  39 , Fitness Achieved:  2070.0
+Tick/Tock:  0 , Genome:  40 , Fitness Achieved:  22.0
+Tick/Tock:  0 , Genome:  41 , Fitness Achieved:  16751.0
+Tick/Tock:  0 , Genome:  42 , Fitness Achieved:  16759.0
+Tick/Tock:  0 , Genome:  29 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  43 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  44 , Fitness Achieved:  17055.0
+Tick/Tock:  0 , Genome:  45 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  46 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  47 , Fitness Achieved:  6037.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19118.0
+Tick/Tock:  0 , Genome:  49 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  51 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  52 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  53 , Fitness Achieved:  1049.0
+Tick/Tock:  0 , Genome:  54 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  55 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  56 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  57 , Fitness Achieved:  2149.0
+Population's average fitness: 6214.96667 stdev: 8452.00458
+Best fitness: 29721.00000 - size: (12, 6044) - species 2 - id 50
+Average adjusted fitness: 0.197
+Mean genetic distance 2.104, standard deviation 0.588
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1     9  19118.0    0.185     0
+     2    1     5  29721.0    0.292     0
+     3    1     7  17055.0    0.115     0
+     4    0     9       --       --     0
+Total extinctions: 0
+Generation time: 707.111 sec (544.189 average)
+
+ ****** Running generation 2 ******
+
+Tick/Tock:  0 , Genome:  44 , Fitness Achieved:  17055.0
+Tick/Tock:  0 , Genome:  58 , Fitness Achieved:  2054.0
+Tick/Tock:  0 , Genome:  59 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  60 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  61 , Fitness Achieved:  3968.0
+Tick/Tock:  0 , Genome:  62 , Fitness Achieved:  1153.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  18743.0
+Tick/Tock:  0 , Genome:  63 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  64 , Fitness Achieved:  266.0
+Tick/Tock:  0 , Genome:  65 , Fitness Achieved:  3675.0
+Tick/Tock:  0 , Genome:  66 , Fitness Achieved:  223.0
+Tick/Tock:  0 , Genome:  67 , Fitness Achieved:  1228.0
+Tick/Tock:  0 , Genome:  68 , Fitness Achieved:  3647.0
+Tick/Tock:  1 , Genome:  69 , Fitness Achieved:  5836.0
+Tick/Tock:  0 , Genome:  70 , Fitness Achieved:  18.0
+Tick/Tock:  0 , Genome:  71 , Fitness Achieved:  1241.0
+Tick/Tock:  0 , Genome:  72 , Fitness Achieved:  16751.0
+Tick/Tock:  0 , Genome:  73 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  74 , Fitness Achieved:  34.0
+Tick/Tock:  0 , Genome:  75 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  76 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  77 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  78 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  79 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  80 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  81 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  82 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  83 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  84 , Fitness Achieved:  16700.0
+Population's average fitness: 7417.10000 stdev: 8550.36891
+Best fitness: 29721.00000 - size: (12, 6044) - species 3 - id 50
+Average adjusted fitness: 0.271
+Mean genetic distance 2.044, standard deviation 0.667
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2     6  16751.0    0.087     1
+     2    2     3  16700.0    0.337     1
+     3    2    14  29721.0    0.464     0
+     4    1     7  18743.0    0.196     0
+Total extinctions: 0
+Generation time: 718.681 sec (602.353 average)
+
+ ****** Running generation 3 ******
+
+Tick/Tock:  0 , Genome:  82 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  85 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  86 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  87 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  88 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  89 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  90 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  72 , Fitness Achieved:  16751.0
+Tick/Tock:  0 , Genome:  91 , Fitness Achieved:  3672.0
+Tick/Tock:  0 , Genome:  92 , Fitness Achieved:  16655.0
+Tick/Tock:  0 , Genome:  93 , Fitness Achieved:  3659.0
+Tick/Tock:  0 , Genome:  94 , Fitness Achieved:  2074.0
+Tick/Tock:  0 , Genome:  95 , Fitness Achieved:  16742.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19115.0
+Tick/Tock:  0 , Genome:  96 , Fitness Achieved:  3736.0
+Tick/Tock:  0 , Genome:  97 , Fitness Achieved:  3686.0
+Tick/Tock:  0 , Genome:  98 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  99 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  100 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  101 , Fitness Achieved:  186.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  102 , Fitness Achieved:  4075.0
+Tick/Tock:  0 , Genome:  103 , Fitness Achieved:  2649.0
+Tick/Tock:  0 , Genome:  104 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  105 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  106 , Fitness Achieved:  423.0
+Tick/Tock:  0 , Genome:  107 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  108 , Fitness Achieved:  14.0
+Tick/Tock:  0 , Genome:  109 , Fitness Achieved:  38.0
+Tick/Tock:  0 , Genome:  110 , Fitness Achieved:  16700.0
+Population's average fitness: 9673.20000 stdev: 8468.23935
+Best fitness: 29721.00000 - size: (12, 6044) - species 3 - id 50
+Average adjusted fitness: 0.348
+Mean genetic distance 2.108, standard deviation 0.697
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3     7  16751.0    0.334     2
+     2    3     8  16700.0    0.562     2
+     3    3    11  29721.0    0.370     1
+     4    2     5  19115.0    0.128     0
+Total extinctions: 0
+Generation time: 725.709 sec (633.192 average)
+
+ ****** Running generation 4 ******
+
+Tick/Tock:  0 , Genome:  82 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  111 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  112 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  113 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  114 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  115 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  116 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  117 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  72 , Fitness Achieved:  16751.0
+Tick/Tock:  0 , Genome:  118 , Fitness Achieved:  16764.0
+Tick/Tock:  0 , Genome:  119 , Fitness Achieved:  16737.0
+Tick/Tock:  0 , Genome:  120 , Fitness Achieved:  16709.0
+Tick/Tock:  0 , Genome:  121 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  122 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  123 , Fitness Achieved:  3791.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  18540.0
+Tick/Tock:  0 , Genome:  124 , Fitness Achieved:  3.0
+Tick/Tock:  0 , Genome:  125 , Fitness Achieved:  2166.0
+Tick/Tock:  0 , Genome:  126 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  127 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  128 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  129 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  130 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  131 , Fitness Achieved:  32.0
+Tick/Tock:  0 , Genome:  132 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  133 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  134 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  135 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  136 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  137 , Fitness Achieved:  16700.0
+Population's average fitness: 12529.48387 stdev: 7956.92498
+Best fitness: 29721.00000 - size: (12, 6044) - species 3 - id 50
+Average adjusted fitness: 0.400
+Mean genetic distance 2.103, standard deviation 0.714
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4     8  16764.0    0.501     3
+     2    4     9  16700.0    0.562     3
+     3    4     9  29721.0    0.397     2
+     4    3     4  18540.0    0.139     1
+Total extinctions: 0
+Generation time: 839.857 sec (674.525 average)
+
+ ****** Running generation 5 ******
+
+Tick/Tock:  0 , Genome:  82 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  138 , Fitness Achieved:  2232.0
+Tick/Tock:  0 , Genome:  139 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  140 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  141 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  142 , Fitness Achieved:  17670.0
+Tick/Tock:  0 , Genome:  143 , Fitness Achieved:  2379.0
+Tick/Tock:  0 , Genome:  144 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  145 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  118 , Fitness Achieved:  16764.0
+Tick/Tock:  0 , Genome:  146 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  148 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  149 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  150 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  151 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  152 , Fitness Achieved:  3639.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19068.0
+Tick/Tock:  0 , Genome:  153 , Fitness Achieved:  1.0
+Tick/Tock:  0 , Genome:  154 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  155 , Fitness Achieved:  2187.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  156 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  157 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  158 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  159 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  160 , Fitness Achieved:  16453.0
+Tick/Tock:  0 , Genome:  161 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  162 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  163 , Fitness Achieved:  16700.0
+Population's average fitness: 11336.93333 stdev: 9140.12790
+Best fitness: 29721.00000 - size: (12, 6044) - species 3 - id 50
+Average adjusted fitness: 0.354
+Mean genetic distance 2.043, standard deviation 0.710
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    10  29594.0    0.421     0
+     2    5     9  17670.0    0.395     4
+     3    5     9  29721.0    0.422     3
+     4    4     3  19068.0    0.179     2
+Total extinctions: 0
+Generation time: 706.812 sec (679.906 average)
+
+ ****** Running generation 6 ******
+
+Tick/Tock:  0 , Genome:  142 , Fitness Achieved:  17670.0
+Tick/Tock:  0 , Genome:  164 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  165 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  166 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  167 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  168 , Fitness Achieved:  16701.0
+Tick/Tock:  0 , Genome:  169 , Fitness Achieved:  3683.0
+Tick/Tock:  0 , Genome:  170 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  171 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  18550.0
+Tick/Tock:  0 , Genome:  172 , Fitness Achieved:  2423.0
+Tick/Tock:  0 , Genome:  173 , Fitness Achieved:  2381.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  174 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  175 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  176 , Fitness Achieved:  16788.0
+Tick/Tock:  0 , Genome:  177 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  178 , Fitness Achieved:  22.0
+Tick/Tock:  0 , Genome:  179 , Fitness Achieved:  30.0
+Tick/Tock:  0 , Genome:  180 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  181 , Fitness Achieved:  16730.0
+Tick/Tock:  1 , Genome:  182 , Fitness Achieved:  5884.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  183 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  184 , Fitness Achieved:  17203.0
+Tick/Tock:  0 , Genome:  185 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  186 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  187 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  188 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  189 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  190 , Fitness Achieved:  16700.0
+Population's average fitness: 12792.77419 stdev: 8363.61927
+Best fitness: 29721.00000 - size: (12, 6044) - species 3 - id 50
+Average adjusted fitness: 0.405
+Mean genetic distance 2.081, standard deviation 0.713
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6     8  29594.0    0.352     1
+     2    6     9  17670.0    0.517     5
+     3    6     9  29721.0    0.488     4
+     4    5     4  18550.0    0.262     3
+Total extinctions: 0
+Generation time: 970.065 sec (721.358 average)
+
+ ****** Running generation 7 ******
+
+Tick/Tock:  0 , Genome:  142 , Fitness Achieved:  17670.0
+Tick/Tock:  0 , Genome:  191 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  192 , Fitness Achieved:  3669.0
+Tick/Tock:  0 , Genome:  193 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  194 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  195 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  196 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  197 , Fitness Achieved:  3803.0
+Tick/Tock:  0 , Genome:  198 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  18731.0
+Tick/Tock:  0 , Genome:  199 , Fitness Achieved:  1484.0
+Tick/Tock:  0 , Genome:  200 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  201 , Fitness Achieved:  3542.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  202 , Fitness Achieved:  141.0
+Tick/Tock:  0 , Genome:  203 , Fitness Achieved:  4125.0
+Tick/Tock:  0 , Genome:  204 , Fitness Achieved:  138.0
+Tick/Tock:  0 , Genome:  205 , Fitness Achieved:  16695.0
+Tick/Tock:  0 , Genome:  206 , Fitness Achieved:  18870.0
+Tick/Tock:  0 , Genome:  207 , Fitness Achieved:  3473.0
+Tick/Tock:  0 , Genome:  208 , Fitness Achieved:  16695.0
+Tick/Tock:  0 , Genome:  50 , Fitness Achieved:  29721.0
+Tick/Tock:  0 , Genome:  209 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  210 , Fitness Achieved:  16.0
+Tick/Tock:  0 , Genome:  211 , Fitness Achieved:  16810.0
+Tick/Tock:  0 , Genome:  212 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  213 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30789.0
+Tick/Tock:  0 , Genome:  215 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  216 , Fitness Achieved:  196.0
+Population's average fitness: 12215.40000 stdev: 9436.87967
+Best fitness: 30789.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.368
+Mean genetic distance 2.009, standard deviation 0.724
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7     7  29594.0    0.364     2
+     2    7    10  17670.0    0.452     6
+     3    7    10  30789.0    0.461     0
+     4    6     3  18731.0    0.193     4
+Total extinctions: 0
+Generation time: 851.055 sec (737.570 average)
+
+ ****** Running generation 8 ******
+
+Tick/Tock:  0 , Genome:  142 , Fitness Achieved:  17670.0
+Tick/Tock:  0 , Genome:  217 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  218 , Fitness Achieved:  2646.0
+Tick/Tock:  0 , Genome:  219 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  220 , Fitness Achieved:  16696.0
+Tick/Tock:  0 , Genome:  221 , Fitness Achieved:  3549.0
+Tick/Tock:  1 , Genome:  222 , Fitness Achieved:  7018.0
+Tick/Tock:  0 , Genome:  223 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  224 , Fitness Achieved:  19583.0
+Tick/Tock:  0 , Genome:  225 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19132.0
+Tick/Tock:  1 , Genome:  226 , Fitness Achieved:  5758.0
+Tick/Tock:  0 , Genome:  227 , Fitness Achieved:  16823.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  228 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  229 , Fitness Achieved:  2217.0
+Tick/Tock:  0 , Genome:  230 , Fitness Achieved:  2219.0
+Tick/Tock:  0 , Genome:  231 , Fitness Achieved:  16574.0
+Tick/Tock:  0 , Genome:  232 , Fitness Achieved:  3668.0
+Tick/Tock:  0 , Genome:  233 , Fitness Achieved:  16695.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30789.0
+Tick/Tock:  0 , Genome:  234 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  235 , Fitness Achieved:  37.0
+Tick/Tock:  0 , Genome:  236 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  237 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  238 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  239 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  240 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  241 , Fitness Achieved:  16699.0
+Tick/Tock:  0 , Genome:  242 , Fitness Achieved:  16700.0
+Population's average fitness: 13215.43333 stdev: 8080.28782
+Best fitness: 30789.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.426
+Mean genetic distance 2.144, standard deviation 0.717
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8     6  29594.0    0.339     3
+     2    8     9  19583.0    0.435     7
+     3    8     9  30789.0    0.480     1
+     4    7     5  19132.0    0.452     0
+Total extinctions: 0
+Generation time: 1036.667 sec (770.803 average)
+
+ ****** Running generation 9 ******
+
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19132.0
+Tick/Tock:  0 , Genome:  243 , Fitness Achieved:  16788.0
+Tick/Tock:  0 , Genome:  244 , Fitness Achieved:  2609.0
+Tick/Tock:  0 , Genome:  245 , Fitness Achieved:  2251.0
+Tick/Tock:  0 , Genome:  246 , Fitness Achieved:  2303.0
+Tick/Tock:  1 , Genome:  224 , Fitness Achieved:  19536.0
+Tick/Tock:  0 , Genome:  247 , Fitness Achieved:  3666.0
+Tick/Tock:  0 , Genome:  248 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  249 , Fitness Achieved:  491.0
+Tick/Tock:  0 , Genome:  250 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  251 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  252 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  253 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  254 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  255 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  256 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  257 , Fitness Achieved:  16776.0
+Tick/Tock:  0 , Genome:  258 , Fitness Achieved:  489.0
+Tick/Tock:  0 , Genome:  259 , Fitness Achieved:  22.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30723.0
+Tick/Tock:  0 , Genome:  260 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  261 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  262 , Fitness Achieved:  17741.0
+Tick/Tock:  0 , Genome:  263 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  264 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  265 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  266 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  267 , Fitness Achieved:  16700.0
+Population's average fitness: 11349.00000 stdev: 9340.70475
+Best fitness: 30723.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.350
+Mean genetic distance 2.144, standard deviation 0.715
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9     5  29594.0    0.254     4
+     2    9     8  19536.0    0.327     8
+     3    9    10  30723.0    0.538     2
+     4    8     6  19132.0    0.280     1
+Total extinctions: 0
+Generation time: 816.192 sec (775.342 average)
+
+ ****** Running generation 10 ******
+
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19078.0
+Tick/Tock:  0 , Genome:  268 , Fitness Achieved:  31.0
+Tick/Tock:  0 , Genome:  269 , Fitness Achieved:  18121.0
+Tick/Tock:  0 , Genome:  270 , Fitness Achieved:  1594.0
+Tick/Tock:  1 , Genome:  271 , Fitness Achieved:  6022.0
+Tick/Tock:  0 , Genome:  272 , Fitness Achieved:  14.0
+Tick/Tock:  1 , Genome:  224 , Fitness Achieved:  19410.0
+Tick/Tock:  0 , Genome:  273 , Fitness Achieved:  16795.0
+Tick/Tock:  0 , Genome:  274 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  275 , Fitness Achieved:  3583.0
+Tick/Tock:  0 , Genome:  276 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  277 , Fitness Achieved:  491.0
+Tick/Tock:  0 , Genome:  278 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  279 , Fitness Achieved:  6361.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  280 , Fitness Achieved:  1.0
+Tick/Tock:  0 , Genome:  281 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  282 , Fitness Achieved:  4.0
+Tick/Tock:  0 , Genome:  283 , Fitness Achieved:  214.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30715.0
+Tick/Tock:  0 , Genome:  284 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  285 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  286 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  287 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  288 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  289 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  290 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  291 , Fitness Achieved:  2503.0
+Tick/Tock:  0 , Genome:  292 , Fitness Achieved:  271.0
+Population's average fitness: 9944.89655 stdev: 9526.91448
+Best fitness: 30715.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.296
+Mean genetic distance 2.169, standard deviation 0.783
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10     4  29594.0    0.194     5
+     2   10     7  19410.0    0.258     9
+     3   10    11  30715.0    0.490     3
+     4    9     7  19078.0    0.243     2
+Total extinctions: 0
+Generation time: 905.141 sec (827.729 average)
+
+ ****** Running generation 11 ******
+
+Tick/Tock:  1 , Genome:  48 , Fitness Achieved:  19079.0
+Tick/Tock:  0 , Genome:  293 , Fitness Achieved:  1269.0
+Tick/Tock:  0 , Genome:  294 , Fitness Achieved:  2220.0
+Tick/Tock:  0 , Genome:  295 , Fitness Achieved:  3700.0
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  297 , Fitness Achieved:  2061.0
+Tick/Tock:  1 , Genome:  298 , Fitness Achieved:  18185.0
+Tick/Tock:  1 , Genome:  224 , Fitness Achieved:  19410.0
+Tick/Tock:  0 , Genome:  299 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  300 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  301 , Fitness Achieved:  2719.0
+Tick/Tock:  0 , Genome:  302 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  303 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  304 , Fitness Achieved:  27289.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  1 , Genome:  305 , Fitness Achieved:  6684.0
+Tick/Tock:  1 , Genome:  306 , Fitness Achieved:  26184.0
+Tick/Tock:  0 , Genome:  307 , Fitness Achieved:  2214.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30731.0
+Tick/Tock:  0 , Genome:  308 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  309 , Fitness Achieved:  16743.0
+Tick/Tock:  0 , Genome:  310 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  311 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  312 , Fitness Achieved:  3597.0
+Tick/Tock:  0 , Genome:  313 , Fitness Achieved:  2566.0
+Tick/Tock:  0 , Genome:  314 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  315 , Fitness Achieved:  1235.0
+Tick/Tock:  0 , Genome:  316 , Fitness Achieved:  29153.0
+Tick/Tock:  0 , Genome:  317 , Fitness Achieved:  16700.0
+Population's average fitness: 13351.86207 stdev: 10164.16546
+Best fitness: 30731.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.443
+Mean genetic distance 2.229, standard deviation 0.766
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11     6  29594.0    0.526     6
+     2   11     8  27289.0    0.463    10
+     3   11     9  30731.0    0.446     4
+     4   10     6  25671.0    0.336     0
+Total extinctions: 0
+Generation time: 1334.216 sec (890.440 average)
+
+ ****** Running generation 12 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  318 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  319 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  320 , Fitness Achieved:  1420.0
+Tick/Tock:  0 , Genome:  321 , Fitness Achieved:  4.0
+Tick/Tock:  0 , Genome:  322 , Fitness Achieved:  15.0
+Tick/Tock:  1 , Genome:  304 , Fitness Achieved:  27036.0
+Tick/Tock:  0 , Genome:  323 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  324 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  325 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  326 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  327 , Fitness Achieved:  3848.0
+Tick/Tock:  0 , Genome:  328 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  329 , Fitness Achieved:  16549.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  330 , Fitness Achieved:  2556.0
+Tick/Tock:  0 , Genome:  331 , Fitness Achieved:  3583.0
+Tick/Tock:  0 , Genome:  332 , Fitness Achieved:  16762.0
+Tick/Tock:  0 , Genome:  333 , Fitness Achieved:  3681.0
+Tick/Tock:  0 , Genome:  334 , Fitness Achieved:  47.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30707.0
+Tick/Tock:  0 , Genome:  335 , Fitness Achieved:  14.0
+Tick/Tock:  0 , Genome:  336 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  337 , Fitness Achieved:  16744.0
+Tick/Tock:  0 , Genome:  338 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  339 , Fitness Achieved:  4056.0
+Tick/Tock:  0 , Genome:  340 , Fitness Achieved:  3404.0
+Tick/Tock:  0 , Genome:  341 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  342 , Fitness Achieved:  3745.0
+Population's average fitness: 9411.58621 stdev: 10105.24859
+Best fitness: 30707.00000 - size: (12, 5511) - species 3 - id 214
+Average adjusted fitness: 0.296
+Mean genetic distance 2.273, standard deviation 0.785
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12     7  29594.0    0.305     7
+     2   12     9  27036.0    0.397    11
+     3   12     8  30707.0    0.333     5
+     4   11     5  25671.0    0.147     1
+Total extinctions: 0
+Generation time: 828.033 sec (901.375 average)
+
+ ****** Running generation 13 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  343 , Fitness Achieved:  1469.0
+Tick/Tock:  0 , Genome:  344 , Fitness Achieved:  2675.0
+Tick/Tock:  0 , Genome:  345 , Fitness Achieved:  16934.0
+Tick/Tock:  0 , Genome:  346 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  304 , Fitness Achieved:  27036.0
+Tick/Tock:  0 , Genome:  347 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  348 , Fitness Achieved:  25952.0
+Tick/Tock:  1 , Genome:  349 , Fitness Achieved:  7241.0
+Tick/Tock:  0 , Genome:  350 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  351 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  352 , Fitness Achieved:  3783.0
+Tick/Tock:  0 , Genome:  353 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  354 , Fitness Achieved:  6049.0
+Tick/Tock:  0 , Genome:  147 , Fitness Achieved:  29594.0
+Tick/Tock:  0 , Genome:  355 , Fitness Achieved:  1.0
+Tick/Tock:  0 , Genome:  356 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36210.0
+Tick/Tock:  0 , Genome:  358 , Fitness Achieved:  1245.0
+Tick/Tock:  0 , Genome:  359 , Fitness Achieved:  312.0
+Tick/Tock:  0 , Genome:  360 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30724.0
+Tick/Tock:  0 , Genome:  361 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  362 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  363 , Fitness Achieved:  17177.0
+Tick/Tock:  0 , Genome:  364 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  365 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  366 , Fitness Achieved:  193.0
+Tick/Tock:  0 , Genome:  367 , Fitness Achieved:  0.0
+Population's average fitness: 12616.06897 stdev: 10995.07057
+Best fitness: 36210.00000 - size: (14, 4247) - species 1 - id 357
+Average adjusted fitness: 0.342
+Mean genetic distance 2.280, standard deviation 0.822
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13     8  36210.0    0.398     0
+     2   13     8  27036.0    0.317    12
+     3   13     9  30724.0    0.397     6
+     4   12     6  25671.0    0.258     2
+Total extinctions: 0
+Generation time: 1052.683 sec (934.072 average)
+
+ ****** Running generation 14 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  368 , Fitness Achieved:  2215.0
+Tick/Tock:  0 , Genome:  369 , Fitness Achieved:  17214.0
+Tick/Tock:  0 , Genome:  370 , Fitness Achieved:  2061.0
+Tick/Tock:  0 , Genome:  371 , Fitness Achieved:  2027.0
+Tick/Tock:  1 , Genome:  372 , Fitness Achieved:  14080.0
+Tick/Tock:  1 , Genome:  304 , Fitness Achieved:  27338.0
+Tick/Tock:  1 , Genome:  373 , Fitness Achieved:  32432.0
+Tick/Tock:  0 , Genome:  374 , Fitness Achieved:  3751.0
+Tick/Tock:  0 , Genome:  375 , Fitness Achieved:  16851.0
+Tick/Tock:  0 , Genome:  376 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  377 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  378 , Fitness Achieved:  12983.0
+Tick/Tock:  0 , Genome:  379 , Fitness Achieved:  16406.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30729.0
+Tick/Tock:  0 , Genome:  380 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  381 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  382 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  383 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  384 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  385 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  386 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  387 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36215.0
+Tick/Tock:  0 , Genome:  388 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  389 , Fitness Achieved:  2439.0
+Tick/Tock:  0 , Genome:  390 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  391 , Fitness Achieved:  298.0
+Tick/Tock:  0 , Genome:  392 , Fitness Achieved:  16730.0
+Tick/Tock:  0 , Genome:  393 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  394 , Fitness Achieved:  16700.0
+Population's average fitness: 12126.67742 stdev: 10811.22819
+Best fitness: 36215.00000 - size: (14, 4247) - species 1 - id 357
+Average adjusted fitness: 0.333
+Mean genetic distance 2.244, standard deviation 0.795
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14     8  36215.0    0.364     0
+     2   14     8  32432.0    0.379     0
+     3   14     7  30729.0    0.299     7
+     4   13     6  25671.0    0.291     3
+Total extinctions: 0
+Generation time: 1081.463 sec (958.233 average)
+
+ ****** Running generation 15 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  1 , Genome:  395 , Fitness Achieved:  6616.0
+Tick/Tock:  0 , Genome:  396 , Fitness Achieved:  2653.0
+Tick/Tock:  0 , Genome:  397 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  398 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  399 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30633.0
+Tick/Tock:  0 , Genome:  400 , Fitness Achieved:  30.0
+Tick/Tock:  0 , Genome:  401 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  402 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  403 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  404 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  405 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  373 , Fitness Achieved:  32446.0
+Tick/Tock:  0 , Genome:  406 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  407 , Fitness Achieved:  2473.0
+Tick/Tock:  0 , Genome:  408 , Fitness Achieved:  2.0
+Tick/Tock:  0 , Genome:  409 , Fitness Achieved:  32927.0
+Tick/Tock:  0 , Genome:  410 , Fitness Achieved:  7.0
+Tick/Tock:  0 , Genome:  411 , Fitness Achieved:  17984.0
+Tick/Tock:  0 , Genome:  412 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36210.0
+Tick/Tock:  0 , Genome:  413 , Fitness Achieved:  869.0
+Tick/Tock:  0 , Genome:  414 , Fitness Achieved:  407.0
+Tick/Tock:  0 , Genome:  415 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  416 , Fitness Achieved:  1368.0
+Tick/Tock:  0 , Genome:  417 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  418 , Fitness Achieved:  17584.0
+Tick/Tock:  0 , Genome:  419 , Fitness Achieved:  0.0
+Population's average fitness: 11199.31034 stdev: 11821.56614
+Best fitness: 36210.00000 - size: (14, 4247) - species 1 - id 357
+Average adjusted fitness: 0.304
+Mean genetic distance 2.200, standard deviation 0.787
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15     8  36210.0    0.310     1
+     2   15     8  32927.0    0.296     0
+     3   15    10  30633.0    0.450     8
+     4   14     5  25671.0    0.161     4
+Total extinctions: 0
+Generation time: 901.689 sec (977.720 average)
+
+ ****** Running generation 16 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25778.0
+Tick/Tock:  0 , Genome:  420 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  421 , Fitness Achieved:  2321.0
+Tick/Tock:  0 , Genome:  422 , Fitness Achieved:  5097.0
+Tick/Tock:  1 , Genome:  423 , Fitness Achieved:  6122.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30734.0
+Tick/Tock:  0 , Genome:  424 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  425 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  426 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  427 , Fitness Achieved:  34.0
+Tick/Tock:  0 , Genome:  428 , Fitness Achieved:  39.0
+Tick/Tock:  0 , Genome:  429 , Fitness Achieved:  306.0
+Tick/Tock:  0 , Genome:  430 , Fitness Achieved:  510.0
+Tick/Tock:  0 , Genome:  431 , Fitness Achieved:  17469.0
+Tick/Tock:  0 , Genome:  432 , Fitness Achieved:  180.0
+Tick/Tock:  0 , Genome:  409 , Fitness Achieved:  32927.0
+Tick/Tock:  0 , Genome:  433 , Fitness Achieved:  17579.0
+Tick/Tock:  0 , Genome:  434 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  435 , Fitness Achieved:  27761.0
+Tick/Tock:  1 , Genome:  436 , Fitness Achieved:  15726.0
+Tick/Tock:  0 , Genome:  437 , Fitness Achieved:  16348.0
+Tick/Tock:  0 , Genome:  438 , Fitness Achieved:  18357.0
+Tick/Tock:  0 , Genome:  439 , Fitness Achieved:  33642.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36236.0
+Tick/Tock:  0 , Genome:  440 , Fitness Achieved:  2217.0
+Tick/Tock:  0 , Genome:  441 , Fitness Achieved:  1337.0
+Tick/Tock:  0 , Genome:  442 , Fitness Achieved:  22.0
+Tick/Tock:  0 , Genome:  443 , Fitness Achieved:  1364.0
+Tick/Tock:  1 , Genome:  444 , Fitness Achieved:  6709.0
+Tick/Tock:  0 , Genome:  445 , Fitness Achieved:  18454.0
+Tick/Tock:  0 , Genome:  446 , Fitness Achieved:  3777.0
+Population's average fitness: 11972.45161 stdev: 11702.32120
+Best fitness: 36236.00000 - size: (14, 4247) - species 1 - id 357
+Average adjusted fitness: 0.323
+Mean genetic distance 2.209, standard deviation 0.820
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16     7  36236.0    0.242     0
+     2   16    10  33642.0    0.560     0
+     3   16     8  30734.0    0.274     9
+     4   15     6  25778.0    0.217     0
+Total extinctions: 0
+Generation time: 1205.327 sec (1001.247 average)
+
+ ****** Running generation 17 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  447 , Fitness Achieved:  1495.0
+Tick/Tock:  0 , Genome:  448 , Fitness Achieved:  1274.0
+Tick/Tock:  0 , Genome:  449 , Fitness Achieved:  4222.0
+Tick/Tock:  0 , Genome:  450 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  451 , Fitness Achieved:  3681.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30734.0
+Tick/Tock:  0 , Genome:  452 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  453 , Fitness Achieved:  1446.0
+Tick/Tock:  0 , Genome:  454 , Fitness Achieved:  18508.0
+Tick/Tock:  0 , Genome:  455 , Fitness Achieved:  1370.0
+Tick/Tock:  0 , Genome:  456 , Fitness Achieved:  16320.0
+Tick/Tock:  0 , Genome:  457 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  458 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  439 , Fitness Achieved:  33642.0
+Tick/Tock:  0 , Genome:  459 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  460 , Fitness Achieved:  42263.0
+Tick/Tock:  0 , Genome:  461 , Fitness Achieved:  20469.0
+Tick/Tock:  0 , Genome:  462 , Fitness Achieved:  3650.0
+Tick/Tock:  0 , Genome:  463 , Fitness Achieved:  3674.0
+Tick/Tock:  0 , Genome:  464 , Fitness Achieved:  4932.0
+Tick/Tock:  0 , Genome:  465 , Fitness Achieved:  4500.0
+Tick/Tock:  0 , Genome:  466 , Fitness Achieved:  16859.0
+Tick/Tock:  1 , Genome:  467 , Fitness Achieved:  49727.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36147.0
+Tick/Tock:  0 , Genome:  468 , Fitness Achieved:  16487.0
+Tick/Tock:  0 , Genome:  469 , Fitness Achieved:  3653.0
+Tick/Tock:  0 , Genome:  470 , Fitness Achieved:  29.0
+Tick/Tock:  0 , Genome:  471 , Fitness Achieved:  2206.0
+Tick/Tock:  0 , Genome:  472 , Fitness Achieved:  2217.0
+Tick/Tock:  0 , Genome:  473 , Fitness Achieved:  54.0
+Population's average fitness: 12281.48387 stdev: 13801.40127
+Best fitness: 49727.00000 - size: (13, 3721) - species 2 - id 467
+Average adjusted fitness: 0.228
+Mean genetic distance 2.222, standard deviation 0.805
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17     6  36147.0    0.175     1
+     2   17    11  49727.0    0.395     0
+     3   17     7  30734.0    0.214    10
+     4   16     5  25671.0    0.129     1
+Total extinctions: 0
+Generation time: 1024.235 sec (1018.565 average)
+
+ ****** Running generation 18 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  474 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  475 , Fitness Achieved:  5081.0
+Tick/Tock:  0 , Genome:  476 , Fitness Achieved:  16289.0
+Tick/Tock:  0 , Genome:  477 , Fitness Achieved:  2172.0
+Tick/Tock:  1 , Genome:  214 , Fitness Achieved:  30707.0
+Tick/Tock:  0 , Genome:  478 , Fitness Achieved:  2624.0
+Tick/Tock:  0 , Genome:  479 , Fitness Achieved:  16728.0
+Tick/Tock:  0 , Genome:  480 , Fitness Achieved:  37207.0
+Tick/Tock:  0 , Genome:  481 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  482 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  483 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36210.0
+Tick/Tock:  1 , Genome:  484 , Fitness Achieved:  23444.0
+Tick/Tock:  0 , Genome:  485 , Fitness Achieved:  221.0
+Tick/Tock:  0 , Genome:  486 , Fitness Achieved:  32159.0
+Tick/Tock:  0 , Genome:  487 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  488 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  467 , Fitness Achieved:  49727.0
+Tick/Tock:  0 , Genome:  489 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  490 , Fitness Achieved:  5263.0
+Tick/Tock:  0 , Genome:  491 , Fitness Achieved:  3672.0
+Tick/Tock:  0 , Genome:  492 , Fitness Achieved:  16312.0
+Tick/Tock:  0 , Genome:  493 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  494 , Fitness Achieved:  16394.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  496 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  497 , Fitness Achieved:  2666.0
+Tick/Tock:  1 , Genome:  498 , Fitness Achieved:  6872.0
+Population's average fitness: 16534.03448 stdev: 18277.82938
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.191
+Mean genetic distance 2.246, standard deviation 0.795
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18     7  36210.0    0.218     2
+     2   18    10  83268.0    0.219     0
+     3   18     8  37207.0    0.207     0
+     4   17     4  25671.0    0.118     2
+Total extinctions: 0
+Generation time: 1173.029 sec (1032.201 average)
+
+ ****** Running generation 19 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  499 , Fitness Achieved:  1523.0
+Tick/Tock:  0 , Genome:  500 , Fitness Achieved:  98.0
+Tick/Tock:  0 , Genome:  501 , Fitness Achieved:  15.0
+Tick/Tock:  1 , Genome:  357 , Fitness Achieved:  36210.0
+Tick/Tock:  0 , Genome:  502 , Fitness Achieved:  18140.0
+Tick/Tock:  0 , Genome:  503 , Fitness Achieved:  16730.0
+Tick/Tock:  0 , Genome:  504 , Fitness Achieved:  3652.0
+Tick/Tock:  0 , Genome:  505 , Fitness Achieved:  2208.0
+Tick/Tock:  0 , Genome:  506 , Fitness Achieved:  27.0
+Tick/Tock:  1 , Genome:  507 , Fitness Achieved:  36662.0
+Tick/Tock:  0 , Genome:  480 , Fitness Achieved:  37207.0
+Tick/Tock:  0 , Genome:  508 , Fitness Achieved:  16699.0
+Tick/Tock:  0 , Genome:  509 , Fitness Achieved:  2467.0
+Tick/Tock:  0 , Genome:  510 , Fitness Achieved:  34.0
+Tick/Tock:  0 , Genome:  511 , Fitness Achieved:  16288.0
+Tick/Tock:  0 , Genome:  512 , Fitness Achieved:  16796.0
+Tick/Tock:  0 , Genome:  513 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  514 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  515 , Fitness Achieved:  16769.0
+Tick/Tock:  1 , Genome:  516 , Fitness Achieved:  38659.0
+Tick/Tock:  0 , Genome:  517 , Fitness Achieved:  3938.0
+Tick/Tock:  0 , Genome:  518 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  519 , Fitness Achieved:  24371.0
+Tick/Tock:  1 , Genome:  520 , Fitness Achieved:  14694.0
+Tick/Tock:  0 , Genome:  521 , Fitness Achieved:  16344.0
+Tick/Tock:  0 , Genome:  522 , Fitness Achieved:  4411.0
+Tick/Tock:  0 , Genome:  523 , Fitness Achieved:  0.0
+Population's average fitness: 16654.51724 stdev: 17394.56242
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.181
+Mean genetic distance 2.326, standard deviation 0.764
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19     8  36662.0    0.195     0
+     2   19    11  83268.0    0.263     1
+     3   19     7  37207.0    0.184     1
+     4   18     3  25671.0    0.082     3
+Total extinctions: 0
+Generation time: 1166.126 sec (1067.194 average)
+
+ ****** Running generation 20 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  524 , Fitness Achieved:  6802.0
+Tick/Tock:  1 , Genome:  525 , Fitness Achieved:  24529.0
+Tick/Tock:  1 , Genome:  507 , Fitness Achieved:  36664.0
+Tick/Tock:  0 , Genome:  526 , Fitness Achieved:  2499.0
+Tick/Tock:  0 , Genome:  527 , Fitness Achieved:  550.0
+Tick/Tock:  0 , Genome:  528 , Fitness Achieved:  16652.0
+Tick/Tock:  0 , Genome:  529 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  530 , Fitness Achieved:  33402.0
+Tick/Tock:  1 , Genome:  531 , Fitness Achieved:  2854.0
+Tick/Tock:  0 , Genome:  532 , Fitness Achieved:  5799.0
+Tick/Tock:  0 , Genome:  480 , Fitness Achieved:  37207.0
+Tick/Tock:  0 , Genome:  533 , Fitness Achieved:  111.0
+Tick/Tock:  0 , Genome:  534 , Fitness Achieved:  29569.0
+Tick/Tock:  0 , Genome:  535 , Fitness Achieved:  30331.0
+Tick/Tock:  0 , Genome:  536 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  537 , Fitness Achieved:  2845.0
+Tick/Tock:  0 , Genome:  538 , Fitness Achieved:  1950.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  539 , Fitness Achieved:  837.0
+Tick/Tock:  1 , Genome:  540 , Fitness Achieved:  24302.0
+Tick/Tock:  0 , Genome:  541 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  542 , Fitness Achieved:  3530.0
+Tick/Tock:  0 , Genome:  543 , Fitness Achieved:  16643.0
+Tick/Tock:  1 , Genome:  544 , Fitness Achieved:  16893.0
+Tick/Tock:  1 , Genome:  545 , Fitness Achieved:  29055.0
+Tick/Tock:  0 , Genome:  546 , Fitness Achieved:  5155.0
+Tick/Tock:  0 , Genome:  547 , Fitness Achieved:  2791.0
+Tick/Tock:  1 , Genome:  548 , Fitness Achieved:  47450.0
+Population's average fitness: 17453.62069 stdev: 18534.06332
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.206
+Mean genetic distance 2.346, standard deviation 0.853
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20     7  36664.0    0.151     0
+     2   20    10  83268.0    0.269     2
+     3   20     6  37207.0    0.175     2
+     4   19     6  25671.0    0.228     4
+Total extinctions: 0
+Generation time: 1455.695 sec (1122.250 average)
+
+ ****** Running generation 21 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25165.0
+Tick/Tock:  0 , Genome:  549 , Fitness Achieved:  2109.0
+Tick/Tock:  0 , Genome:  550 , Fitness Achieved:  2270.0
+Tick/Tock:  0 , Genome:  551 , Fitness Achieved:  16667.0
+Tick/Tock:  0 , Genome:  552 , Fitness Achieved:  3577.0
+Tick/Tock:  0 , Genome:  553 , Fitness Achieved:  16293.0
+Tick/Tock:  1 , Genome:  507 , Fitness Achieved:  36659.0
+Tick/Tock:  1 , Genome:  554 , Fitness Achieved:  25897.0
+Tick/Tock:  0 , Genome:  555 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  556 , Fitness Achieved:  30694.0
+Tick/Tock:  0 , Genome:  557 , Fitness Achieved:  17404.0
+Tick/Tock:  0 , Genome:  558 , Fitness Achieved:  1623.0
+Tick/Tock:  1 , Genome:  559 , Fitness Achieved:  9845.0
+Tick/Tock:  0 , Genome:  480 , Fitness Achieved:  37207.0
+Tick/Tock:  0 , Genome:  560 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  561 , Fitness Achieved:  25571.0
+Tick/Tock:  0 , Genome:  562 , Fitness Achieved:  3562.0
+Tick/Tock:  1 , Genome:  563 , Fitness Achieved:  38197.0
+Tick/Tock:  0 , Genome:  564 , Fitness Achieved:  46455.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  1 , Genome:  565 , Fitness Achieved:  29893.0
+Tick/Tock:  0 , Genome:  566 , Fitness Achieved:  9.0
+Tick/Tock:  0 , Genome:  567 , Fitness Achieved:  18449.0
+Tick/Tock:  0 , Genome:  568 , Fitness Achieved:  5875.0
+Tick/Tock:  0 , Genome:  569 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  570 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  571 , Fitness Achieved:  27468.0
+Tick/Tock:  0 , Genome:  572 , Fitness Achieved:  19979.0
+Tick/Tock:  0 , Genome:  573 , Fitness Achieved:  1187.0
+Population's average fitness: 18114.58621 stdev: 18631.75486
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.217
+Mean genetic distance 2.369, standard deviation 0.861
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21     8  36659.0    0.210     1
+     2   21     9  83268.0    0.224     3
+     3   21     8  46455.0    0.302     0
+     4   20     5  25165.0    0.132     5
+Total extinctions: 0
+Generation time: 1455.958 sec (1134.424 average)
+
+ ****** Running generation 22 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25701.0
+Tick/Tock:  0 , Genome:  574 , Fitness Achieved:  5.0
+Tick/Tock:  0 , Genome:  575 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  576 , Fitness Achieved:  16.0
+Tick/Tock:  0 , Genome:  577 , Fitness Achieved:  2096.0
+Tick/Tock:  1 , Genome:  507 , Fitness Achieved:  36664.0
+Tick/Tock:  0 , Genome:  578 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  579 , Fitness Achieved:  17529.0
+Tick/Tock:  0 , Genome:  580 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  581 , Fitness Achieved:  25836.0
+Tick/Tock:  0 , Genome:  582 , Fitness Achieved:  17284.0
+Tick/Tock:  1 , Genome:  583 , Fitness Achieved:  27035.0
+Tick/Tock:  0 , Genome:  584 , Fitness Achieved:  4947.0
+Tick/Tock:  0 , Genome:  564 , Fitness Achieved:  46455.0
+Tick/Tock:  0 , Genome:  585 , Fitness Achieved:  16592.0
+Tick/Tock:  0 , Genome:  586 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  587 , Fitness Achieved:  23833.0
+Tick/Tock:  0 , Genome:  588 , Fitness Achieved:  3709.0
+Tick/Tock:  0 , Genome:  589 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  590 , Fitness Achieved:  1309.0
+Tick/Tock:  0 , Genome:  591 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  592 , Fitness Achieved:  1198.0
+Tick/Tock:  0 , Genome:  593 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  594 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  595 , Fitness Achieved:  10646.0
+Tick/Tock:  0 , Genome:  596 , Fitness Achieved:  16377.0
+Tick/Tock:  0 , Genome:  597 , Fitness Achieved:  1320.0
+Tick/Tock:  0 , Genome:  598 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  599 , Fitness Achieved:  0.0
+Population's average fitness: 14273.56667 stdev: 17666.41714
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.160
+Mean genetic distance 2.413, standard deviation 0.830
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22     9  36664.0    0.219     2
+     2   22    10  83268.0    0.217     4
+     3   22     7  46455.0    0.138     1
+     4   21     4  25701.0    0.067     6
+Total extinctions: 0
+Generation time: 1052.650 sec (1156.886 average)
+
+ ****** Running generation 23 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  600 , Fitness Achieved:  87.0
+Tick/Tock:  0 , Genome:  601 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  602 , Fitness Achieved:  3852.0
+Tick/Tock:  1 , Genome:  507 , Fitness Achieved:  36633.0
+Tick/Tock:  0 , Genome:  603 , Fitness Achieved:  28.0
+Tick/Tock:  1 , Genome:  604 , Fitness Achieved:  29788.0
+Tick/Tock:  1 , Genome:  605 , Fitness Achieved:  12620.0
+Tick/Tock:  0 , Genome:  606 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  607 , Fitness Achieved:  42550.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93779.0
+Tick/Tock:  0 , Genome:  609 , Fitness Achieved:  454.0
+Tick/Tock:  0 , Genome:  610 , Fitness Achieved:  16837.0
+Tick/Tock:  0 , Genome:  564 , Fitness Achieved:  46455.0
+Tick/Tock:  0 , Genome:  611 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  612 , Fitness Achieved:  3309.0
+Tick/Tock:  0 , Genome:  613 , Fitness Achieved:  1370.0
+Tick/Tock:  0 , Genome:  614 , Fitness Achieved:  36.0
+Tick/Tock:  0 , Genome:  615 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  617 , Fitness Achieved:  1648.0
+Tick/Tock:  0 , Genome:  618 , Fitness Achieved:  16552.0
+Tick/Tock:  0 , Genome:  619 , Fitness Achieved:  16685.0
+Tick/Tock:  1 , Genome:  620 , Fitness Achieved:  7107.0
+Tick/Tock:  0 , Genome:  621 , Fitness Achieved:  1387.0
+Tick/Tock:  0 , Genome:  622 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  623 , Fitness Achieved:  4952.0
+Tick/Tock:  0 , Genome:  624 , Fitness Achieved:  29468.0
+Tick/Tock:  0 , Genome:  625 , Fitness Achieved:  16700.0
+Population's average fitness: 18528.80000 stdev: 23882.58345
+Best fitness: 93779.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.180
+Mean genetic distance 2.395, standard deviation 0.905
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    10  93779.0    0.276     0
+     2   23     9  83268.0    0.190     5
+     3   23     8  47928.0    0.176     0
+     4   22     3  25671.0    0.079     7
+Total extinctions: 0
+Generation time: 1285.027 sec (1180.120 average)
+
+ ****** Running generation 24 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  626 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  627 , Fitness Achieved:  17489.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  0 , Genome:  628 , Fitness Achieved:  19796.0
+Tick/Tock:  1 , Genome:  629 , Fitness Achieved:  6666.0
+Tick/Tock:  0 , Genome:  630 , Fitness Achieved:  837.0
+Tick/Tock:  0 , Genome:  631 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  632 , Fitness Achieved:  16377.0
+Tick/Tock:  0 , Genome:  633 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  634 , Fitness Achieved:  2566.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  635 , Fitness Achieved:  3778.0
+Tick/Tock:  1 , Genome:  636 , Fitness Achieved:  26028.0
+Tick/Tock:  0 , Genome:  637 , Fitness Achieved:  16678.0
+Tick/Tock:  0 , Genome:  638 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  639 , Fitness Achieved:  36245.0
+Tick/Tock:  0 , Genome:  640 , Fitness Achieved:  7.0
+Tick/Tock:  0 , Genome:  641 , Fitness Achieved:  5070.0
+Tick/Tock:  0 , Genome:  642 , Fitness Achieved:  3668.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93779.0
+Tick/Tock:  1 , Genome:  643 , Fitness Achieved:  40525.0
+Tick/Tock:  0 , Genome:  644 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  645 , Fitness Achieved:  20772.0
+Tick/Tock:  0 , Genome:  646 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  647 , Fitness Achieved:  16660.0
+Tick/Tock:  0 , Genome:  648 , Fitness Achieved:  2096.0
+Tick/Tock:  1 , Genome:  649 , Fitness Achieved:  351.0
+Tick/Tock:  0 , Genome:  650 , Fitness Achieved:  3743.0
+Tick/Tock:  0 , Genome:  651 , Fitness Achieved:  16287.0
+Population's average fitness: 18532.40000 stdev: 22493.86828
+Best fitness: 93779.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.188
+Mean genetic distance 2.455, standard deviation 0.876
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24     9  93779.0    0.224     1
+     2   24    10  83268.0    0.227     6
+     3   24     7  47928.0    0.148     1
+     4   23     5  25671.0    0.153     8
+Total extinctions: 0
+Generation time: 1331.588 sec (1205.132 average)
+
+ ****** Running generation 25 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  652 , Fitness Achieved:  2424.0
+Tick/Tock:  0 , Genome:  653 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  654 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  655 , Fitness Achieved:  2424.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  1 , Genome:  656 , Fitness Achieved:  4918.0
+Tick/Tock:  0 , Genome:  657 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  658 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  659 , Fitness Achieved:  16738.0
+Tick/Tock:  0 , Genome:  660 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  661 , Fitness Achieved:  1249.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+/home/tyler/.local/lib/python3.6/site-packages/neat/activations.py:12: RuntimeWarning: overflow encountered in double_scalars
+  z = max(-60.0, min(60.0, 5.0 * z))
+Tick/Tock:  1 , Genome:  662 , Fitness Achieved:  31743.0
+Tick/Tock:  0 , Genome:  663 , Fitness Achieved:  16595.0
+Tick/Tock:  0 , Genome:  664 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  665 , Fitness Achieved:  15985.0
+Tick/Tock:  0 , Genome:  666 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  667 , Fitness Achieved:  17739.0
+Tick/Tock:  1 , Genome:  668 , Fitness Achieved:  36792.0
+Tick/Tock:  0 , Genome:  669 , Fitness Achieved:  16466.0
+Tick/Tock:  1 , Genome:  670 , Fitness Achieved:  21994.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  94163.0
+Tick/Tock:  0 , Genome:  671 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  672 , Fitness Achieved:  21337.0
+Tick/Tock:  0 , Genome:  673 , Fitness Achieved:  2184.0
+Tick/Tock:  0 , Genome:  674 , Fitness Achieved:  2203.0
+Tick/Tock:  0 , Genome:  675 , Fitness Achieved:  16362.0
+Tick/Tock:  0 , Genome:  676 , Fitness Achieved:  2097.0
+Tick/Tock:  1 , Genome:  677 , Fitness Achieved:  29104.0
+Tick/Tock:  0 , Genome:  678 , Fitness Achieved:  20037.0
+Population's average fitness: 19758.32258 stdev: 21477.61521
+Best fitness: 94163.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.190
+Mean genetic distance 2.449, standard deviation 0.835
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25     9  94163.0    0.240     0
+     2   25    10  83268.0    0.273     7
+     3   25     7  47928.0    0.183     2
+     4   24     4  25671.0    0.065     9
+Total extinctions: 0
+Generation time: 1437.527 sec (1258.716 average)
+
+ ****** Running generation 26 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  1 , Genome:  679 , Fitness Achieved:  5323.0
+Tick/Tock:  0 , Genome:  680 , Fitness Achieved:  1376.0
+Tick/Tock:  0 , Genome:  681 , Fitness Achieved:  3687.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  0 , Genome:  682 , Fitness Achieved:  1549.0
+Tick/Tock:  0 , Genome:  683 , Fitness Achieved:  17744.0
+Tick/Tock:  0 , Genome:  684 , Fitness Achieved:  36121.0
+Tick/Tock:  1 , Genome:  685 , Fitness Achieved:  28332.0
+Tick/Tock:  0 , Genome:  686 , Fitness Achieved:  16443.0
+Tick/Tock:  0 , Genome:  687 , Fitness Achieved:  19473.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  688 , Fitness Achieved:  2298.0
+Tick/Tock:  0 , Genome:  689 , Fitness Achieved:  3687.0
+Tick/Tock:  1 , Genome:  690 , Fitness Achieved:  27566.0
+Tick/Tock:  0 , Genome:  691 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  692 , Fitness Achieved:  3813.0
+Tick/Tock:  0 , Genome:  693 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  694 , Fitness Achieved:  17641.0
+Tick/Tock:  1 , Genome:  695 , Fitness Achieved:  5669.0
+Tick/Tock:  0 , Genome:  696 , Fitness Achieved:  3649.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  94219.0
+Tick/Tock:  0 , Genome:  697 , Fitness Achieved:  3550.0
+Tick/Tock:  0 , Genome:  698 , Fitness Achieved:  453.0
+Tick/Tock:  0 , Genome:  699 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  700 , Fitness Achieved:  40426.0
+Tick/Tock:  0 , Genome:  701 , Fitness Achieved:  16399.0
+Tick/Tock:  0 , Genome:  702 , Fitness Achieved:  36.0
+Tick/Tock:  0 , Genome:  703 , Fitness Achieved:  16375.0
+Tick/Tock:  0 , Genome:  704 , Fitness Achieved:  4985.0
+Population's average fitness: 18688.93333 stdev: 22590.37880
+Best fitness: 94219.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.187
+Mean genetic distance 2.353, standard deviation 0.864
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26     8  94219.0    0.208     0
+     2   26     9  83268.0    0.192     8
+     3   26     9  47928.0    0.254     3
+     4   25     3  25671.0    0.096    10
+Total extinctions: 0
+Generation time: 1346.429 sec (1272.826 average)
+
+ ****** Running generation 27 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25671.0
+Tick/Tock:  0 , Genome:  705 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  706 , Fitness Achieved:  8.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  0 , Genome:  707 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  708 , Fitness Achieved:  16324.0
+Tick/Tock:  0 , Genome:  709 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  710 , Fitness Achieved:  837.0
+Tick/Tock:  0 , Genome:  711 , Fitness Achieved:  16813.0
+Tick/Tock:  0 , Genome:  712 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  713 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  714 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  715 , Fitness Achieved:  16403.0
+Tick/Tock:  0 , Genome:  716 , Fitness Achieved:  837.0
+Tick/Tock:  0 , Genome:  717 , Fitness Achieved:  16419.0
+Tick/Tock:  0 , Genome:  718 , Fitness Achieved:  3833.0
+Tick/Tock:  0 , Genome:  719 , Fitness Achieved:  16907.0
+Tick/Tock:  1 , Genome:  720 , Fitness Achieved:  47829.0
+Tick/Tock:  1 , Genome:  721 , Fitness Achieved:  26905.0
+Tick/Tock:  1 , Genome:  722 , Fitness Achieved:  38198.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93779.0
+Tick/Tock:  0 , Genome:  723 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  724 , Fitness Achieved:  11.0
+Tick/Tock:  0 , Genome:  725 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  726 , Fitness Achieved:  2428.0
+Tick/Tock:  0 , Genome:  727 , Fitness Achieved:  4018.0
+Tick/Tock:  0 , Genome:  728 , Fitness Achieved:  75.0
+Tick/Tock:  0 , Genome:  729 , Fitness Achieved:  16287.0
+Population's average fitness: 17523.37931 stdev: 23841.83587
+Best fitness: 93779.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.171
+Mean genetic distance 2.380, standard deviation 0.945
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   27     9  93779.0    0.200     1
+     2   27    11  83268.0    0.297     9
+     3   27     7  47928.0    0.097     4
+     4   26     4  25671.0    0.091    11
+Total extinctions: 0
+Generation time: 1025.066 sec (1272.910 average)
+
+ ****** Running generation 28 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25418.0
+Tick/Tock:  0 , Genome:  730 , Fitness Achieved:  16519.0
+Tick/Tock:  0 , Genome:  731 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  732 , Fitness Achieved:  16306.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47927.0
+Tick/Tock:  0 , Genome:  733 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  734 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  735 , Fitness Achieved:  17919.0
+Tick/Tock:  0 , Genome:  736 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  737 , Fitness Achieved:  19798.0
+Tick/Tock:  0 , Genome:  738 , Fitness Achieved:  2186.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  739 , Fitness Achieved:  5565.0
+Tick/Tock:  0 , Genome:  740 , Fitness Achieved:  20892.0
+Tick/Tock:  0 , Genome:  741 , Fitness Achieved:  3643.0
+Tick/Tock:  0 , Genome:  742 , Fitness Achieved:  2183.0
+Tick/Tock:  0 , Genome:  743 , Fitness Achieved:  16479.0
+Tick/Tock:  0 , Genome:  744 , Fitness Achieved:  29809.0
+Tick/Tock:  0 , Genome:  745 , Fitness Achieved:  16370.0
+Tick/Tock:  0 , Genome:  746 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  747 , Fitness Achieved:  16320.0
+Tick/Tock:  0 , Genome:  748 , Fitness Achieved:  2099.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93681.0
+Tick/Tock:  0 , Genome:  749 , Fitness Achieved:  3526.0
+Tick/Tock:  0 , Genome:  750 , Fitness Achieved:  12.0
+Tick/Tock:  0 , Genome:  751 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  752 , Fitness Achieved:  3.0
+Tick/Tock:  0 , Genome:  753 , Fitness Achieved:  2414.0
+Tick/Tock:  0 , Genome:  754 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  755 , Fitness Achieved:  2516.0
+Tick/Tock:  0 , Genome:  756 , Fitness Achieved:  16700.0
+Population's average fitness: 17097.93548 stdev: 21583.28518
+Best fitness: 93681.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.177
+Mean genetic distance 2.377, standard deviation 0.897
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   28     8  93681.0    0.181     2
+     2   28    10  83268.0    0.207    10
+     3   28     6  47927.0    0.159     5
+     4   27     5  25418.0    0.161    12
+Total extinctions: 0
+Generation time: 1027.719 sec (1258.379 average)
+
+ ****** Running generation 29 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25665.0
+Tick/Tock:  0 , Genome:  757 , Fitness Achieved:  3185.0
+Tick/Tock:  0 , Genome:  758 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  759 , Fitness Achieved:  6742.0
+Tick/Tock:  1 , Genome:  760 , Fitness Achieved:  3814.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  0 , Genome:  761 , Fitness Achieved:  16375.0
+Tick/Tock:  0 , Genome:  762 , Fitness Achieved:  16374.0
+Tick/Tock:  0 , Genome:  763 , Fitness Achieved:  16344.0
+Tick/Tock:  0 , Genome:  764 , Fitness Achieved:  16412.0
+Tick/Tock:  0 , Genome:  765 , Fitness Achieved:  21663.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  766 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  767 , Fitness Achieved:  10377.0
+Tick/Tock:  0 , Genome:  768 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  769 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  770 , Fitness Achieved:  23078.0
+Tick/Tock:  0 , Genome:  771 , Fitness Achieved:  2635.0
+Tick/Tock:  0 , Genome:  772 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  773 , Fitness Achieved:  32957.0
+Tick/Tock:  1 , Genome:  774 , Fitness Achieved:  28374.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93681.0
+Tick/Tock:  0 , Genome:  775 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  776 , Fitness Achieved:  3669.0
+Tick/Tock:  0 , Genome:  777 , Fitness Achieved:  4857.0
+Tick/Tock:  0 , Genome:  778 , Fitness Achieved:  16738.0
+Tick/Tock:  1 , Genome:  779 , Fitness Achieved:  6891.0
+Tick/Tock:  0 , Genome:  780 , Fitness Achieved:  2216.0
+Tick/Tock:  0 , Genome:  781 , Fitness Achieved:  30221.0
+Population's average fitness: 18929.65517 stdev: 22182.29290
+Best fitness: 93681.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.192
+Mean genetic distance 2.360, standard deviation 0.936
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   29     9  93681.0    0.211     3
+     2   29     9  83268.0    0.231    11
+     3   29     8  47928.0    0.240     6
+     4   28     4  25665.0    0.084    13
+Total extinctions: 0
+Generation time: 1410.429 sec (1282.809 average)
+
+ ****** Running generation 30 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  25571.0
+Tick/Tock:  0 , Genome:  782 , Fitness Achieved:  16523.0
+Tick/Tock:  0 , Genome:  783 , Fitness Achieved:  7930.0
+Tick/Tock:  1 , Genome:  784 , Fitness Achieved:  4211.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47928.0
+Tick/Tock:  0 , Genome:  785 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  786 , Fitness Achieved:  16731.0
+Tick/Tock:  0 , Genome:  787 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  788 , Fitness Achieved:  25175.0
+Tick/Tock:  0 , Genome:  789 , Fitness Achieved:  2670.0
+Tick/Tock:  0 , Genome:  790 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  791 , Fitness Achieved:  1387.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83267.0
+Tick/Tock:  1 , Genome:  792 , Fitness Achieved:  4217.0
+Tick/Tock:  0 , Genome:  793 , Fitness Achieved:  2566.0
+Tick/Tock:  0 , Genome:  794 , Fitness Achieved:  29787.0
+Tick/Tock:  0 , Genome:  795 , Fitness Achieved:  16796.0
+Tick/Tock:  0 , Genome:  796 , Fitness Achieved:  29585.0
+Tick/Tock:  0 , Genome:  797 , Fitness Achieved:  2566.0
+Tick/Tock:  0 , Genome:  798 , Fitness Achieved:  3312.0
+Tick/Tock:  0 , Genome:  799 , Fitness Achieved:  2566.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  93717.0
+Tick/Tock:  1 , Genome:  800 , Fitness Achieved:  20932.0
+Tick/Tock:  0 , Genome:  801 , Fitness Achieved:  123.0
+Tick/Tock:  0 , Genome:  802 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  803 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  804 , Fitness Achieved:  2775.0
+Tick/Tock:  0 , Genome:  805 , Fitness Achieved:  2166.0
+Tick/Tock:  1 , Genome:  806 , Fitness Achieved:  20019.0
+Tick/Tock:  1 , Genome:  807 , Fitness Achieved:  29880.0
+Population's average fitness: 17596.53333 stdev: 22400.84691
+Best fitness: 93717.00000 - size: (14, 3892) - species 1 - id 608
+Average adjusted fitness: 0.181
+Mean genetic distance 2.385, standard deviation 0.951
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   30    10  93717.0    0.223     4
+     2   30     8  83267.0    0.207    12
+     3   30     7  47928.0    0.148     7
+     4   29     5  25571.0    0.145    14
+Total extinctions: 0
+Generation time: 1797.198 sec (1316.959 average)
+
+ ****** Running generation 31 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  19939.0
+Tick/Tock:  1 , Genome:  808 , Fitness Achieved:  18694.0
+Tick/Tock:  1 , Genome:  809 , Fitness Achieved:  18697.0
+Tick/Tock:  1 , Genome:  810 , Fitness Achieved:  16999.0
+Tick/Tock:  0 , Genome:  811 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  31638.0
+Tick/Tock:  0 , Genome:  812 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  813 , Fitness Achieved:  16319.0
+Tick/Tock:  0 , Genome:  814 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  815 , Fitness Achieved:  29248.0
+Tick/Tock:  1 , Genome:  816 , Fitness Achieved:  19071.0
+Tick/Tock:  0 , Genome:  817 , Fitness Achieved:  16525.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  31368.0
+Tick/Tock:  0 , Genome:  818 , Fitness Achieved:  2233.0
+Tick/Tock:  0 , Genome:  819 , Fitness Achieved:  17604.0
+Tick/Tock:  0 , Genome:  820 , Fitness Achieved:  2566.0
+Tick/Tock:  0 , Genome:  821 , Fitness Achieved:  3679.0
+Tick/Tock:  0 , Genome:  822 , Fitness Achieved:  3594.0
+Tick/Tock:  0 , Genome:  823 , Fitness Achieved:  2566.0
+Tick/Tock:  1 , Genome:  824 , Fitness Achieved:  18277.0
+Tick/Tock:  1 , Genome:  608 , Fitness Achieved:  17926.0
+Tick/Tock:  1 , Genome:  825 , Fitness Achieved:  5527.0
+Tick/Tock:  1 , Genome:  826 , Fitness Achieved:  30314.0
+Tick/Tock:  0 , Genome:  827 , Fitness Achieved:  16773.0
+Tick/Tock:  1 , Genome:  828 , Fitness Achieved:  17967.0
+Tick/Tock:  0 , Genome:  829 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  830 , Fitness Achieved:  1352.0
+Tick/Tock:  0 , Genome:  831 , Fitness Achieved:  4.0
+Tick/Tock:  0 , Genome:  832 , Fitness Achieved:  17223.0
+Tick/Tock:  0 , Genome:  833 , Fitness Achieved:  0.0
+Population's average fitness: 13079.66667 stdev: 10204.48925
+Best fitness: 31638.00000 - size: (12, 3764) - species 3 - id 616
+Average adjusted fitness: 0.429
+Mean genetic distance 2.425, standard deviation 0.928
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   31     8  30314.0    0.338     5
+     2   31     7  31368.0    0.324    13
+     3   31     9  31638.0    0.583     8
+     4   30     7  19939.0    0.470    15
+Total extinctions: 0
+Generation time: 1960.818 sec (1367.445 average)
+
+ ****** Running generation 32 ******
+
+Tick/Tock:  1 , Genome:  296 , Fitness Achieved:  19977.0
+Tick/Tock:  0 , Genome:  834 , Fitness Achieved:  16397.0
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  836 , Fitness Achieved:  1287.0
+Tick/Tock:  1 , Genome:  837 , Fitness Achieved:  5892.0
+Tick/Tock:  0 , Genome:  838 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  839 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  826 , Fitness Achieved:  30227.0
+Tick/Tock:  0 , Genome:  840 , Fitness Achieved:  2224.0
+Tick/Tock:  0 , Genome:  841 , Fitness Achieved:  1199.0
+Tick/Tock:  1 , Genome:  842 , Fitness Achieved:  7207.0
+Tick/Tock:  0 , Genome:  843 , Fitness Achieved:  16489.0
+Tick/Tock:  1 , Genome:  844 , Fitness Achieved:  21046.0
+Tick/Tock:  1 , Genome:  845 , Fitness Achieved:  2324.0
+Tick/Tock:  0 , Genome:  846 , Fitness Achieved:  3648.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  31368.0
+Tick/Tock:  1 , Genome:  847 , Fitness Achieved:  16723.0
+Tick/Tock:  0 , Genome:  848 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  849 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  850 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  851 , Fitness Achieved:  6931.0
+Tick/Tock:  0 , Genome:  852 , Fitness Achieved:  2310.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  31555.0
+Tick/Tock:  0 , Genome:  853 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  854 , Fitness Achieved:  1467.0
+Tick/Tock:  0 , Genome:  855 , Fitness Achieved:  2569.0
+Tick/Tock:  0 , Genome:  856 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  857 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  858 , Fitness Achieved:  7.0
+Tick/Tock:  0 , Genome:  859 , Fitness Achieved:  18700.0
+Tick/Tock:  0 , Genome:  860 , Fitness Achieved:  1.0
+Population's average fitness: 11371.25806 stdev: 10406.29413
+Best fitness: 31555.00000 - size: (12, 3764) - species 3 - id 616
+Average adjusted fitness: 0.361
+Mean genetic distance 2.428, standard deviation 0.878
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   32     7  30227.0    0.334     6
+     2   32     6  31368.0    0.333    14
+     3   32     8  31555.0    0.368     9
+     4   31     8  30287.0    0.408     0
+Total extinctions: 0
+Generation time: 1903.604 sec (1452.540 average)
+
+ ****** Running generation 33 ******
+
+Tick/Tock:  1 , Genome:  826 , Fitness Achieved:  30227.0
+Tick/Tock:  0 , Genome:  861 , Fitness Achieved:  337.0
+Tick/Tock:  1 , Genome:  862 , Fitness Achieved:  19734.0
+Tick/Tock:  0 , Genome:  863 , Fitness Achieved:  1249.0
+Tick/Tock:  0 , Genome:  864 , Fitness Achieved:  2526.0
+Tick/Tock:  0 , Genome:  865 , Fitness Achieved:  3937.0
+Tick/Tock:  0 , Genome:  866 , Fitness Achieved:  17260.0
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  867 , Fitness Achieved:  17.0
+Tick/Tock:  0 , Genome:  868 , Fitness Achieved:  4047.0
+Tick/Tock:  0 , Genome:  869 , Fitness Achieved:  192.0
+Tick/Tock:  0 , Genome:  870 , Fitness Achieved:  3757.0
+Tick/Tock:  0 , Genome:  871 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  872 , Fitness Achieved:  17755.0
+Tick/Tock:  0 , Genome:  873 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  31368.0
+Tick/Tock:  0 , Genome:  874 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  875 , Fitness Achieved:  4497.0
+Tick/Tock:  1 , Genome:  876 , Fitness Achieved:  5536.0
+Tick/Tock:  1 , Genome:  877 , Fitness Achieved:  17208.0
+Tick/Tock:  1 , Genome:  878 , Fitness Achieved:  28364.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  20822.0
+Tick/Tock:  1 , Genome:  879 , Fitness Achieved:  18861.0
+Tick/Tock:  0 , Genome:  880 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  881 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  882 , Fitness Achieved:  16761.0
+Tick/Tock:  0 , Genome:  883 , Fitness Achieved:  2181.0
+Tick/Tock:  0 , Genome:  884 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  885 , Fitness Achieved:  17299.0
+Population's average fitness: 10721.44828 stdev: 10736.14993
+Best fitness: 31368.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.349
+Mean genetic distance 2.479, standard deviation 0.875
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   33     8  30227.0    0.343     7
+     2   33     8  31368.0    0.462    15
+     3   33     7  20822.0    0.369    10
+     4   32     6  30287.0    0.223     1
+Total extinctions: 0
+Generation time: 1855.587 sec (1509.596 average)
+
+ ****** Running generation 34 ******
+
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47520.0
+Tick/Tock:  1 , Genome:  886 , Fitness Achieved:  22377.0
+Tick/Tock:  0 , Genome:  887 , Fitness Achieved:  16647.0
+Tick/Tock:  0 , Genome:  888 , Fitness Achieved:  5663.0
+Tick/Tock:  0 , Genome:  889 , Fitness Achieved:  1314.0
+Tick/Tock:  1 , Genome:  890 , Fitness Achieved:  31211.0
+Tick/Tock:  1 , Genome:  891 , Fitness Achieved:  21736.0
+Tick/Tock:  0 , Genome:  826 , Fitness Achieved:  30314.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50590.0
+Tick/Tock:  0 , Genome:  893 , Fitness Achieved:  3549.0
+Tick/Tock:  0 , Genome:  894 , Fitness Achieved:  3652.0
+Tick/Tock:  0 , Genome:  895 , Fitness Achieved:  20580.0
+Tick/Tock:  0 , Genome:  896 , Fitness Achieved:  155.0
+Tick/Tock:  0 , Genome:  897 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  898 , Fitness Achieved:  16420.0
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  899 , Fitness Achieved:  4990.0
+Tick/Tock:  0 , Genome:  900 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  901 , Fitness Achieved:  34.0
+Tick/Tock:  1 , Genome:  902 , Fitness Achieved:  24286.0
+Tick/Tock:  0 , Genome:  903 , Fitness Achieved:  3144.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  904 , Fitness Achieved:  2809.0
+Tick/Tock:  1 , Genome:  905 , Fitness Achieved:  28245.0
+Tick/Tock:  0 , Genome:  906 , Fitness Achieved:  11.0
+Tick/Tock:  0 , Genome:  907 , Fitness Achieved:  3660.0
+Tick/Tock:  0 , Genome:  908 , Fitness Achieved:  16395.0
+Tick/Tock:  1 , Genome:  909 , Fitness Achieved:  15478.0
+Tick/Tock:  1 , Genome:  910 , Fitness Achieved:  25384.0
+Population's average fitness: 17566.10345 stdev: 18719.65345
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.208
+Mean genetic distance 2.478, standard deviation 0.863
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   34     7  50590.0    0.189     8
+     2   34     9  82966.0    0.264    16
+     3   34     8  47520.0    0.252    11
+     4   33     5  30287.0    0.126     2
+Total extinctions: 0
+Generation time: 1392.104 sec (1515.648 average)
+
+ ****** Running generation 35 ******
+
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  911 , Fitness Achieved:  16531.0
+Tick/Tock:  0 , Genome:  912 , Fitness Achieved:  1834.0
+Tick/Tock:  0 , Genome:  913 , Fitness Achieved:  2423.0
+Tick/Tock:  0 , Genome:  914 , Fitness Achieved:  20166.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47808.0
+Tick/Tock:  0 , Genome:  915 , Fitness Achieved:  1604.0
+Tick/Tock:  0 , Genome:  916 , Fitness Achieved:  3451.0
+Tick/Tock:  0 , Genome:  917 , Fitness Achieved:  17955.0
+Tick/Tock:  0 , Genome:  918 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  919 , Fitness Achieved:  352.0
+Tick/Tock:  0 , Genome:  920 , Fitness Achieved:  29818.0
+Tick/Tock:  0 , Genome:  921 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50456.0
+Tick/Tock:  0 , Genome:  922 , Fitness Achieved:  1303.0
+Tick/Tock:  0 , Genome:  923 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  924 , Fitness Achieved:  33546.0
+Tick/Tock:  0 , Genome:  925 , Fitness Achieved:  1290.0
+Tick/Tock:  1 , Genome:  926 , Fitness Achieved:  2085.0
+Tick/Tock:  0 , Genome:  927 , Fitness Achieved:  240.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  928 , Fitness Achieved:  19677.0
+Tick/Tock:  0 , Genome:  929 , Fitness Achieved:  42488.0
+Tick/Tock:  1 , Genome:  930 , Fitness Achieved:  21197.0
+Tick/Tock:  0 , Genome:  931 , Fitness Achieved:  16452.0
+Tick/Tock:  1 , Genome:  932 , Fitness Achieved:  20312.0
+Tick/Tock:  1 , Genome:  933 , Fitness Achieved:  45397.0
+Tick/Tock:  1 , Genome:  934 , Fitness Achieved:  35990.0
+Tick/Tock:  1 , Genome:  935 , Fitness Achieved:  25951.0
+Population's average fitness: 19709.62069 stdev: 20145.53960
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.223
+Mean genetic distance 2.466, standard deviation 0.828
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   35     6  50456.0    0.153     9
+     2   35    11  82966.0    0.416    17
+     3   35     7  47808.0    0.152    12
+     4   34     6  30287.0    0.172     3
+Total extinctions: 0
+Generation time: 1421.917 sec (1514.087 average)
+
+ ****** Running generation 36 ******
+
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  936 , Fitness Achieved:  17020.0
+Tick/Tock:  0 , Genome:  937 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  938 , Fitness Achieved:  4726.0
+Tick/Tock:  0 , Genome:  939 , Fitness Achieved:  837.0
+Tick/Tock:  1 , Genome:  940 , Fitness Achieved:  24370.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47872.0
+Tick/Tock:  0 , Genome:  941 , Fitness Achieved:  3.0
+Tick/Tock:  1 , Genome:  942 , Fitness Achieved:  47481.0
+Tick/Tock:  0 , Genome:  943 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  944 , Fitness Achieved:  16519.0
+Tick/Tock:  0 , Genome:  945 , Fitness Achieved:  20694.0
+Tick/Tock:  0 , Genome:  946 , Fitness Achieved:  3145.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50514.0
+Tick/Tock:  1 , Genome:  947 , Fitness Achieved:  11558.0
+Tick/Tock:  0 , Genome:  948 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  949 , Fitness Achieved:  601.0
+Tick/Tock:  0 , Genome:  950 , Fitness Achieved:  240.0
+Tick/Tock:  0 , Genome:  951 , Fitness Achieved:  3624.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  952 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  953 , Fitness Achieved:  3697.0
+Tick/Tock:  0 , Genome:  954 , Fitness Achieved:  3748.0
+Tick/Tock:  1 , Genome:  955 , Fitness Achieved:  22325.0
+Tick/Tock:  0 , Genome:  956 , Fitness Achieved:  16489.0
+Tick/Tock:  0 , Genome:  957 , Fitness Achieved:  16326.0
+Tick/Tock:  0 , Genome:  958 , Fitness Achieved:  5159.0
+Tick/Tock:  0 , Genome:  959 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  960 , Fitness Achieved:  3787.0
+Tick/Tock:  1 , Genome:  961 , Fitness Achieved:  14211.0
+Population's average fitness: 15496.63333 stdev: 19187.87477
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.181
+Mean genetic distance 2.355, standard deviation 0.878
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   36     5  50514.0    0.134    10
+     2   36    10  82966.0    0.203    18
+     3   36     8  47872.0    0.234    13
+     4   35     7  30287.0    0.155     4
+Total extinctions: 0
+Generation time: 1176.462 sec (1497.090 average)
+
+ ****** Running generation 37 ******
+
+Tick/Tock:  0 , Genome:  835 , Fitness Achieved:  30287.0
+Tick/Tock:  0 , Genome:  962 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  964 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  965 , Fitness Achieved:  2208.0
+Tick/Tock:  0 , Genome:  966 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  967 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47872.0
+Tick/Tock:  1 , Genome:  968 , Fitness Achieved:  29349.0
+Tick/Tock:  0 , Genome:  969 , Fitness Achieved:  3647.0
+Tick/Tock:  0 , Genome:  970 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  971 , Fitness Achieved:  31780.0
+Tick/Tock:  0 , Genome:  972 , Fitness Achieved:  16978.0
+Tick/Tock:  0 , Genome:  973 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  974 , Fitness Achieved:  12198.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50578.0
+Tick/Tock:  0 , Genome:  975 , Fitness Achieved:  258.0
+Tick/Tock:  0 , Genome:  976 , Fitness Achieved:  2689.0
+Tick/Tock:  1 , Genome:  977 , Fitness Achieved:  7008.0
+Tick/Tock:  0 , Genome:  978 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82965.0
+Tick/Tock:  1 , Genome:  979 , Fitness Achieved:  6772.0
+Tick/Tock:  0 , Genome:  980 , Fitness Achieved:  2740.0
+Tick/Tock:  1 , Genome:  981 , Fitness Achieved:  6738.0
+Tick/Tock:  0 , Genome:  982 , Fitness Achieved:  7640.0
+Tick/Tock:  0 , Genome:  983 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  984 , Fitness Achieved:  2581.0
+Tick/Tock:  0 , Genome:  985 , Fitness Achieved:  3664.0
+Tick/Tock:  0 , Genome:  986 , Fitness Achieved:  2098.0
+Tick/Tock:  0 , Genome:  987 , Fitness Achieved:  16932.0
+Population's average fitness: 15335.40000 stdev: 19148.49075
+Best fitness: 82965.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.181
+Mean genetic distance 2.417, standard deviation 0.825
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   37     6  50578.0    0.146    11
+     2   37     9  82965.0    0.179    19
+     3   37     9  47872.0    0.241    14
+     4   36     6  41710.0    0.156     0
+Total extinctions: 0
+Generation time: 1213.167 sec (1515.901 average)
+
+ ****** Running generation 38 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  988 , Fitness Achieved:  3534.0
+Tick/Tock:  1 , Genome:  989 , Fitness Achieved:  22978.0
+Tick/Tock:  0 , Genome:  990 , Fitness Achieved:  2596.0
+Tick/Tock:  1 , Genome:  991 , Fitness Achieved:  25828.0
+Tick/Tock:  0 , Genome:  992 , Fitness Achieved:  2771.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47927.0
+Tick/Tock:  0 , Genome:  993 , Fitness Achieved:  21790.0
+Tick/Tock:  0 , Genome:  994 , Fitness Achieved:  2096.0
+Tick/Tock:  1 , Genome:  995 , Fitness Achieved:  26867.0
+Tick/Tock:  0 , Genome:  996 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  997 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  998 , Fitness Achieved:  426.0
+Tick/Tock:  0 , Genome:  999 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1000 , Fitness Achieved:  37383.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50556.0
+Tick/Tock:  0 , Genome:  1001 , Fitness Achieved:  2806.0
+Tick/Tock:  1 , Genome:  1002 , Fitness Achieved:  20162.0
+Tick/Tock:  0 , Genome:  1003 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1004 , Fitness Achieved:  16341.0
+Tick/Tock:  1 , Genome:  1005 , Fitness Achieved:  34961.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1006 , Fitness Achieved:  17216.0
+Tick/Tock:  0 , Genome:  1007 , Fitness Achieved:  16795.0
+Tick/Tock:  0 , Genome:  1008 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1009 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1010 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  1011 , Fitness Achieved:  33365.0
+Tick/Tock:  1 , Genome:  1012 , Fitness Achieved:  5573.0
+Tick/Tock:  1 , Genome:  1013 , Fitness Achieved:  35181.0
+Population's average fitness: 20134.13333 stdev: 19009.08722
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.240
+Mean genetic distance 2.383, standard deviation 0.860
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   38     7  50556.0    0.251    12
+     2   38     9  82966.0    0.301    20
+     3   38     8  47927.0    0.208    15
+     4   37     7  41710.0    0.200     1
+Total extinctions: 0
+Generation time: 1532.287 sec (1566.357 average)
+
+ ****** Running generation 39 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  1014 , Fitness Achieved:  16295.0
+Tick/Tock:  0 , Genome:  1015 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1016 , Fitness Achieved:  1410.0
+Tick/Tock:  1 , Genome:  1017 , Fitness Achieved:  32370.0
+Tick/Tock:  0 , Genome:  1018 , Fitness Achieved:  2226.0
+Tick/Tock:  0 , Genome:  1019 , Fitness Achieved:  65.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47872.0
+Tick/Tock:  0 , Genome:  1020 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1021 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1022 , Fitness Achieved:  37276.0
+Tick/Tock:  0 , Genome:  1023 , Fitness Achieved:  2551.0
+Tick/Tock:  0 , Genome:  1024 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1025 , Fitness Achieved:  6572.0
+Tick/Tock:  0 , Genome:  1026 , Fitness Achieved:  3550.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50506.0
+Tick/Tock:  0 , Genome:  1027 , Fitness Achieved:  1987.0
+Tick/Tock:  0 , Genome:  1028 , Fitness Achieved:  3710.0
+Tick/Tock:  0 , Genome:  1029 , Fitness Achieved:  422.0
+Tick/Tock:  0 , Genome:  1030 , Fitness Achieved:  126.0
+Tick/Tock:  0 , Genome:  1031 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1032 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1033 , Fitness Achieved:  3683.0
+Tick/Tock:  0 , Genome:  1034 , Fitness Achieved:  4973.0
+Tick/Tock:  1 , Genome:  1035 , Fitness Achieved:  28925.0
+Tick/Tock:  0 , Genome:  1036 , Fitness Achieved:  16975.0
+Tick/Tock:  1 , Genome:  1037 , Fitness Achieved:  14866.0
+Tick/Tock:  0 , Genome:  1038 , Fitness Achieved:  3686.0
+Tick/Tock:  0 , Genome:  1039 , Fitness Achieved:  85.0
+Tick/Tock:  1 , Genome:  1040 , Fitness Achieved:  31247.0
+Population's average fitness: 14591.64516 stdev: 19914.81856
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.172
+Mean genetic distance 2.341, standard deviation 0.887
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   39     6  50506.0    0.098    13
+     2   39    10  82966.0    0.251    21
+     3   39     7  47872.0    0.147    16
+     4   38     8  41710.0    0.190     2
+Total extinctions: 0
+Generation time: 1226.655 sec (1547.980 average)
+
+ ****** Running generation 40 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  1041 , Fitness Achieved:  16920.0
+Tick/Tock:  0 , Genome:  1042 , Fitness Achieved:  7.0
+Tick/Tock:  0 , Genome:  1043 , Fitness Achieved:  16358.0
+Tick/Tock:  0 , Genome:  1044 , Fitness Achieved:  3141.0
+Tick/Tock:  0 , Genome:  1045 , Fitness Achieved:  16512.0
+Tick/Tock:  0 , Genome:  1046 , Fitness Achieved:  2207.0
+Tick/Tock:  0 , Genome:  1047 , Fitness Achieved:  6684.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47924.0
+Tick/Tock:  0 , Genome:  1048 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1049 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1050 , Fitness Achieved:  2010.0
+Tick/Tock:  1 , Genome:  1051 , Fitness Achieved:  13952.0
+Tick/Tock:  0 , Genome:  1052 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1053 , Fitness Achieved:  16299.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50553.0
+Tick/Tock:  0 , Genome:  1054 , Fitness Achieved:  4246.0
+Tick/Tock:  0 , Genome:  1055 , Fitness Achieved:  3678.0
+Tick/Tock:  0 , Genome:  1056 , Fitness Achieved:  5645.0
+Tick/Tock:  1 , Genome:  1057 , Fitness Achieved:  21891.0
+Tick/Tock:  0 , Genome:  1058 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1059 , Fitness Achieved:  5093.0
+Tick/Tock:  0 , Genome:  1060 , Fitness Achieved:  16296.0
+Tick/Tock:  0 , Genome:  1061 , Fitness Achieved:  16429.0
+Tick/Tock:  1 , Genome:  1062 , Fitness Achieved:  6616.0
+Tick/Tock:  0 , Genome:  1063 , Fitness Achieved:  4033.0
+Tick/Tock:  0 , Genome:  1064 , Fitness Achieved:  2216.0
+Tick/Tock:  0 , Genome:  1065 , Fitness Achieved:  16296.0
+Tick/Tock:  0 , Genome:  1066 , Fitness Achieved:  3771.0
+Tick/Tock:  1 , Genome:  1067 , Fitness Achieved:  4780.0
+Population's average fitness: 13813.96774 stdev: 18300.10507
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.164
+Mean genetic distance 2.374, standard deviation 0.893
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   40     7  50553.0    0.173    14
+     2   40     9  82966.0    0.191    22
+     3   40     6  47924.0    0.138    17
+     4   39     7  41710.0    0.156     3
+Total extinctions: 0
+Generation time: 1202.471 sec (1488.507 average)
+
+ ****** Running generation 41 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  1068 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1069 , Fitness Achieved:  21480.0
+Tick/Tock:  0 , Genome:  1070 , Fitness Achieved:  6274.0
+Tick/Tock:  0 , Genome:  1071 , Fitness Achieved:  3779.0
+Tick/Tock:  0 , Genome:  1072 , Fitness Achieved:  34.0
+Tick/Tock:  0 , Genome:  1073 , Fitness Achieved:  2132.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47924.0
+Tick/Tock:  0 , Genome:  1074 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1075 , Fitness Achieved:  24432.0
+Tick/Tock:  0 , Genome:  1076 , Fitness Achieved:  3021.0
+Tick/Tock:  1 , Genome:  1077 , Fitness Achieved:  28441.0
+Tick/Tock:  0 , Genome:  1078 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50501.0
+Tick/Tock:  1 , Genome:  1079 , Fitness Achieved:  30041.0
+Tick/Tock:  1 , Genome:  1080 , Fitness Achieved:  28505.0
+Tick/Tock:  0 , Genome:  1081 , Fitness Achieved:  2096.0
+Tick/Tock:  1 , Genome:  1082 , Fitness Achieved:  20665.0
+Tick/Tock:  1 , Genome:  1083 , Fitness Achieved:  6601.0
+Tick/Tock:  0 , Genome:  1084 , Fitness Achieved:  16443.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  1 , Genome:  1085 , Fitness Achieved:  26661.0
+Tick/Tock:  1 , Genome:  1086 , Fitness Achieved:  12872.0
+Tick/Tock:  0 , Genome:  1087 , Fitness Achieved:  27747.0
+Tick/Tock:  0 , Genome:  1088 , Fitness Achieved:  2106.0
+Tick/Tock:  0 , Genome:  1089 , Fitness Achieved:  31823.0
+Tick/Tock:  1 , Genome:  1090 , Fitness Achieved:  6310.0
+Tick/Tock:  0 , Genome:  1091 , Fitness Achieved:  16397.0
+Tick/Tock:  0 , Genome:  1092 , Fitness Achieved:  16550.0
+Population's average fitness: 19224.51724 stdev: 18931.15689
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.226
+Mean genetic distance 2.392, standard deviation 0.877
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   41     8  50501.0    0.267    15
+     2   41    10  82966.0    0.299    23
+     3   41     7  47924.0    0.209    18
+     4   40     6  41710.0    0.130     4
+Total extinctions: 0
+Generation time: 1603.832 sec (1452.809 average)
+
+ ****** Running generation 42 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  1 , Genome:  1093 , Fitness Achieved:  24923.0
+Tick/Tock:  0 , Genome:  1094 , Fitness Achieved:  252.0
+Tick/Tock:  0 , Genome:  1095 , Fitness Achieved:  2032.0
+Tick/Tock:  0 , Genome:  1096 , Fitness Achieved:  16421.0
+Tick/Tock:  1 , Genome:  1097 , Fitness Achieved:  2829.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47924.0
+Tick/Tock:  1 , Genome:  1098 , Fitness Achieved:  24083.0
+Tick/Tock:  0 , Genome:  1099 , Fitness Achieved:  3663.0
+Tick/Tock:  0 , Genome:  1100 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  1101 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1102 , Fitness Achieved:  1062.0
+Tick/Tock:  1 , Genome:  1103 , Fitness Achieved:  20986.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50553.0
+Tick/Tock:  0 , Genome:  1104 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1105 , Fitness Achieved:  837.0
+Tick/Tock:  0 , Genome:  1106 , Fitness Achieved:  311.0
+Tick/Tock:  0 , Genome:  1107 , Fitness Achieved:  3717.0
+Tick/Tock:  1 , Genome:  1108 , Fitness Achieved:  25475.0
+Tick/Tock:  0 , Genome:  1109 , Fitness Achieved:  2.0
+Tick/Tock:  1 , Genome:  1110 , Fitness Achieved:  12089.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1111 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  1112 , Fitness Achieved:  26116.0
+Tick/Tock:  0 , Genome:  1113 , Fitness Achieved:  3.0
+Tick/Tock:  1 , Genome:  1114 , Fitness Achieved:  37515.0
+Tick/Tock:  0 , Genome:  1115 , Fitness Achieved:  16637.0
+Tick/Tock:  0 , Genome:  1116 , Fitness Achieved:  2209.0
+Tick/Tock:  0 , Genome:  1117 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  1118 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1119 , Fitness Achieved:  16287.0
+Population's average fitness: 16070.77419 stdev: 19193.10937
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.188
+Mean genetic distance 2.333, standard deviation 0.915
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   42     7  50553.0    0.140    16
+     2   42    11  82966.0    0.262    24
+     3   42     6  47924.0    0.172    19
+     4   41     7  41710.0    0.177     5
+Total extinctions: 0
+Generation time: 1395.791 sec (1402.027 average)
+
+ ****** Running generation 43 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  0 , Genome:  1120 , Fitness Achieved:  2646.0
+Tick/Tock:  0 , Genome:  1121 , Fitness Achieved:  2727.0
+Tick/Tock:  0 , Genome:  1122 , Fitness Achieved:  2526.0
+Tick/Tock:  0 , Genome:  1123 , Fitness Achieved:  16859.0
+Tick/Tock:  0 , Genome:  1124 , Fitness Achieved:  18272.0
+Tick/Tock:  0 , Genome:  1125 , Fitness Achieved:  837.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47762.0
+Tick/Tock:  0 , Genome:  1126 , Fitness Achieved:  16408.0
+Tick/Tock:  1 , Genome:  1127 , Fitness Achieved:  26190.0
+Tick/Tock:  0 , Genome:  1128 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1129 , Fitness Achieved:  17540.0
+Tick/Tock:  0 , Genome:  1130 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50577.0
+Tick/Tock:  0 , Genome:  1131 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1132 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1133 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  1134 , Fitness Achieved:  23060.0
+Tick/Tock:  0 , Genome:  1135 , Fitness Achieved:  17087.0
+Tick/Tock:  0 , Genome:  1136 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  0 , Genome:  1137 , Fitness Achieved:  4907.0
+Tick/Tock:  0 , Genome:  1138 , Fitness Achieved:  16862.0
+Tick/Tock:  0 , Genome:  1139 , Fitness Achieved:  2222.0
+Tick/Tock:  0 , Genome:  1140 , Fitness Achieved:  16686.0
+Tick/Tock:  0 , Genome:  1141 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1142 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1143 , Fitness Achieved:  4165.0
+Tick/Tock:  0 , Genome:  1144 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  1145 , Fitness Achieved:  3783.0
+Tick/Tock:  1 , Genome:  1146 , Fitness Achieved:  4490.0
+Population's average fitness: 14698.93548 stdev: 18607.11754
+Best fitness: 83268.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.179
+Mean genetic distance 2.341, standard deviation 0.907
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   43     8  50577.0    0.184    17
+     2   43     9  83268.0    0.169    25
+     3   43     8  47762.0    0.216    20
+     4   42     6  41710.0    0.147     6
+Total extinctions: 0
+Generation time: 1016.247 sec (1318.093 average)
+
+ ****** Running generation 44 ******
+
+Tick/Tock:  0 , Genome:  963 , Fitness Achieved:  41710.0
+Tick/Tock:  1 , Genome:  1147 , Fitness Achieved:  20187.0
+Tick/Tock:  0 , Genome:  1148 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  0 , Genome:  1150 , Fitness Achieved:  2561.0
+Tick/Tock:  0 , Genome:  1151 , Fitness Achieved:  2856.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47639.0
+Tick/Tock:  0 , Genome:  1152 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1153 , Fitness Achieved:  29431.0
+Tick/Tock:  0 , Genome:  1154 , Fitness Achieved:  2097.0
+Tick/Tock:  0 , Genome:  1155 , Fitness Achieved:  16402.0
+Tick/Tock:  0 , Genome:  1156 , Fitness Achieved:  16781.0
+Tick/Tock:  0 , Genome:  1157 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1158 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50475.0
+Tick/Tock:  0 , Genome:  1159 , Fitness Achieved:  17434.0
+Tick/Tock:  0 , Genome:  1160 , Fitness Achieved:  2205.0
+Tick/Tock:  0 , Genome:  1161 , Fitness Achieved:  4.0
+Tick/Tock:  0 , Genome:  1162 , Fitness Achieved:  423.0
+Tick/Tock:  0 , Genome:  1163 , Fitness Achieved:  16761.0
+Tick/Tock:  0 , Genome:  1164 , Fitness Achieved:  436.0
+Tick/Tock:  0 , Genome:  1165 , Fitness Achieved:  448.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1166 , Fitness Achieved:  16407.0
+Tick/Tock:  0 , Genome:  1167 , Fitness Achieved:  2269.0
+Tick/Tock:  0 , Genome:  1168 , Fitness Achieved:  5066.0
+Tick/Tock:  0 , Genome:  1169 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1170 , Fitness Achieved:  15945.0
+Tick/Tock:  0 , Genome:  1171 , Fitness Achieved:  16463.0
+Tick/Tock:  1 , Genome:  1172 , Fitness Achieved:  23825.0
+Tick/Tock:  1 , Genome:  1173 , Fitness Achieved:  6674.0
+Population's average fitness: 16589.16129 stdev: 19064.11186
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.203
+Mean genetic distance 2.386, standard deviation 0.903
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   44     6  50475.0    0.133    18
+     2   44     8  82966.0    0.227    26
+     3   44     7  47639.0    0.194    21
+     4   43     8  44225.0    0.257     0
+Total extinctions: 0
+Generation time: 1170.193 sec (1295.902 average)
+
+ ****** Running generation 45 ******
+
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  0 , Genome:  1174 , Fitness Achieved:  1231.0
+Tick/Tock:  0 , Genome:  1175 , Fitness Achieved:  30641.0
+Tick/Tock:  0 , Genome:  1176 , Fitness Achieved:  16405.0
+Tick/Tock:  0 , Genome:  1177 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  1178 , Fitness Achieved:  2751.0
+Tick/Tock:  0 , Genome:  1179 , Fitness Achieved:  17962.0
+Tick/Tock:  0 , Genome:  1180 , Fitness Achieved:  2323.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47872.0
+Tick/Tock:  0 , Genome:  1181 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1182 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1183 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1184 , Fitness Achieved:  837.0
+Tick/Tock:  0 , Genome:  1185 , Fitness Achieved:  28289.0
+Tick/Tock:  0 , Genome:  1186 , Fitness Achieved:  3297.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50448.0
+Tick/Tock:  0 , Genome:  1187 , Fitness Achieved:  19689.0
+Tick/Tock:  1 , Genome:  1188 , Fitness Achieved:  4493.0
+Tick/Tock:  0 , Genome:  1189 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1190 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1191 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82948.0
+Tick/Tock:  0 , Genome:  1192 , Fitness Achieved:  16697.0
+Tick/Tock:  0 , Genome:  1193 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1194 , Fitness Achieved:  18510.0
+Tick/Tock:  0 , Genome:  1195 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  1196 , Fitness Achieved:  6813.0
+Tick/Tock:  0 , Genome:  1197 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  1198 , Fitness Achieved:  15869.0
+Population's average fitness: 16457.72414 stdev: 19110.26216
+Best fitness: 82948.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.196
+Mean genetic distance 2.433, standard deviation 0.890
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   45     7  50448.0    0.183    19
+     2   45     9  82948.0    0.263    27
+     3   45     6  47872.0    0.138    22
+     4   44     7  44225.0    0.199     1
+Total extinctions: 0
+Generation time: 1177.692 sec (1271.480 average)
+
+ ****** Running generation 46 ******
+
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  1 , Genome:  1199 , Fitness Achieved:  13630.0
+Tick/Tock:  0 , Genome:  1200 , Fitness Achieved:  6684.0
+Tick/Tock:  1 , Genome:  1201 , Fitness Achieved:  39348.0
+Tick/Tock:  0 , Genome:  1202 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1203 , Fitness Achieved:  2640.0
+Tick/Tock:  0 , Genome:  1204 , Fitness Achieved:  17784.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47872.0
+Tick/Tock:  0 , Genome:  1205 , Fitness Achieved:  2099.0
+Tick/Tock:  1 , Genome:  1206 , Fitness Achieved:  6844.0
+Tick/Tock:  0 , Genome:  1207 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1208 , Fitness Achieved:  16400.0
+Tick/Tock:  1 , Genome:  1209 , Fitness Achieved:  15068.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50506.0
+Tick/Tock:  0 , Genome:  1210 , Fitness Achieved:  2216.0
+Tick/Tock:  0 , Genome:  1211 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  1212 , Fitness Achieved:  2217.0
+Tick/Tock:  0 , Genome:  1213 , Fitness Achieved:  16432.0
+Tick/Tock:  0 , Genome:  1214 , Fitness Achieved:  16401.0
+Tick/Tock:  0 , Genome:  1215 , Fitness Achieved:  18545.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82966.0
+Tick/Tock:  0 , Genome:  1216 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1217 , Fitness Achieved:  4170.0
+Tick/Tock:  0 , Genome:  1218 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1219 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1220 , Fitness Achieved:  16486.0
+Tick/Tock:  0 , Genome:  1221 , Fitness Achieved:  27688.0
+Tick/Tock:  1 , Genome:  1222 , Fitness Achieved:  6710.0
+Tick/Tock:  0 , Genome:  1223 , Fitness Achieved:  16700.0
+Population's average fitness: 18693.58621 stdev: 18171.34786
+Best fitness: 82966.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.220
+Mean genetic distance 2.373, standard deviation 0.906
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   46     6  50506.0    0.187    20
+     2   46    10  82966.0    0.274    28
+     3   46     7  47872.0    0.177    23
+     4   45     8  44225.0    0.242     2
+Total extinctions: 0
+Generation time: 1235.573 sec (1277.391 average)
+
+ ****** Running generation 47 ******
+
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  0 , Genome:  1224 , Fitness Achieved:  2952.0
+Tick/Tock:  0 , Genome:  1225 , Fitness Achieved:  934.0
+Tick/Tock:  0 , Genome:  1226 , Fitness Achieved:  18146.0
+Tick/Tock:  0 , Genome:  1227 , Fitness Achieved:  2178.0
+Tick/Tock:  0 , Genome:  1228 , Fitness Achieved:  16533.0
+Tick/Tock:  0 , Genome:  1229 , Fitness Achieved:  16338.0
+Tick/Tock:  0 , Genome:  1230 , Fitness Achieved:  1229.0
+Tick/Tock:  1 , Genome:  616 , Fitness Achieved:  47617.0
+Tick/Tock:  0 , Genome:  1231 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1232 , Fitness Achieved:  20.0
+Tick/Tock:  0 , Genome:  1233 , Fitness Achieved:  50.0
+Tick/Tock:  0 , Genome:  1234 , Fitness Achieved:  142.0
+Tick/Tock:  1 , Genome:  1235 , Fitness Achieved:  69978.0
+Tick/Tock:  0 , Genome:  1236 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50440.0
+Tick/Tock:  0 , Genome:  1237 , Fitness Achieved:  219.0
+Tick/Tock:  0 , Genome:  1238 , Fitness Achieved:  3710.0
+Tick/Tock:  0 , Genome:  1239 , Fitness Achieved:  2205.0
+Tick/Tock:  0 , Genome:  1240 , Fitness Achieved:  17048.0
+Tick/Tock:  0 , Genome:  1241 , Fitness Achieved:  3734.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82942.0
+Tick/Tock:  0 , Genome:  1242 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  1243 , Fitness Achieved:  8795.0
+Tick/Tock:  1 , Genome:  1244 , Fitness Achieved:  22607.0
+Tick/Tock:  0 , Genome:  1245 , Fitness Achieved:  3639.0
+Tick/Tock:  1 , Genome:  1246 , Fitness Achieved:  6819.0
+Tick/Tock:  0 , Genome:  1247 , Fitness Achieved:  16437.0
+Tick/Tock:  0 , Genome:  1248 , Fitness Achieved:  3725.0
+Tick/Tock:  1 , Genome:  1249 , Fitness Achieved:  36298.0
+Tick/Tock:  0 , Genome:  1250 , Fitness Achieved:  16700.0
+Population's average fitness: 16527.74194 stdev: 21320.72481
+Best fitness: 82942.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.193
+Mean genetic distance 2.344, standard deviation 0.876
+Population of 29 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   47     6  50440.0    0.155    21
+     2   47    10  82942.0    0.259    29
+     3   47     7  69978.0    0.203     0
+     4   46     6  44225.0    0.155     3
+Total extinctions: 0
+Generation time: 1261.299 sec (1282.204 average)
+
+ ****** Running generation 48 ******
+
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  0 , Genome:  1251 , Fitness Achieved:  3170.0
+Tick/Tock:  0 , Genome:  1252 , Fitness Achieved:  16964.0
+Tick/Tock:  0 , Genome:  1253 , Fitness Achieved:  837.0
+Tick/Tock:  1 , Genome:  1254 , Fitness Achieved:  15353.0
+Tick/Tock:  0 , Genome:  1255 , Fitness Achieved:  16626.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50444.0
+Tick/Tock:  0 , Genome:  1256 , Fitness Achieved:  825.0
+Tick/Tock:  0 , Genome:  1257 , Fitness Achieved:  16336.0
+Tick/Tock:  1 , Genome:  1258 , Fitness Achieved:  25052.0
+Tick/Tock:  0 , Genome:  1259 , Fitness Achieved:  2616.0
+Tick/Tock:  1 , Genome:  1260 , Fitness Achieved:  6761.0
+Tick/Tock:  1 , Genome:  1235 , Fitness Achieved:  70064.0
+Tick/Tock:  0 , Genome:  1261 , Fitness Achieved:  173.0
+Tick/Tock:  0 , Genome:  1262 , Fitness Achieved:  17925.0
+Tick/Tock:  0 , Genome:  1263 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1264 , Fitness Achieved:  16403.0
+Tick/Tock:  0 , Genome:  1265 , Fitness Achieved:  5.0
+Tick/Tock:  0 , Genome:  1266 , Fitness Achieved:  31854.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  82954.0
+Tick/Tock:  0 , Genome:  1267 , Fitness Achieved:  42199.0
+Tick/Tock:  0 , Genome:  1268 , Fitness Achieved:  17132.0
+Tick/Tock:  0 , Genome:  1269 , Fitness Achieved:  17122.0
+Tick/Tock:  0 , Genome:  1270 , Fitness Achieved:  19413.0
+Tick/Tock:  0 , Genome:  1271 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1272 , Fitness Achieved:  16288.0
+Tick/Tock:  0 , Genome:  1273 , Fitness Achieved:  17659.0
+Tick/Tock:  0 , Genome:  1274 , Fitness Achieved:  3678.0
+Tick/Tock:  0 , Genome:  1275 , Fitness Achieved:  2514.0
+Population's average fitness: 20275.58621 stdev: 20027.04243
+Best fitness: 82954.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.237
+Mean genetic distance 2.395, standard deviation 0.903
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   48     7  50444.0    0.205    22
+     2   48     9  82954.0    0.284    30
+     3   48     8  70064.0    0.264     0
+     4   47     7  44225.0    0.195     4
+Total extinctions: 0
+Generation time: 1372.353 sec (1266.210 average)
+
+ ****** Running generation 49 ******
+
+Tick/Tock:  1 , Genome:  1149 , Fitness Achieved:  32227.0
+Tick/Tock:  0 , Genome:  1276 , Fitness Achieved:  3138.0
+Tick/Tock:  0 , Genome:  1277 , Fitness Achieved:  17562.0
+Tick/Tock:  1 , Genome:  1278 , Fitness Achieved:  21254.0
+Tick/Tock:  0 , Genome:  1279 , Fitness Achieved:  1260.0
+Tick/Tock:  1 , Genome:  1280 , Fitness Achieved:  17588.0
+Tick/Tock:  0 , Genome:  1281 , Fitness Achieved:  16465.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  21537.0
+Tick/Tock:  0 , Genome:  1282 , Fitness Achieved:  501.0
+Tick/Tock:  0 , Genome:  1283 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  1284 , Fitness Achieved:  18501.0
+Tick/Tock:  0 , Genome:  1285 , Fitness Achieved:  3645.0
+Tick/Tock:  0 , Genome:  1286 , Fitness Achieved:  17248.0
+Tick/Tock:  0 , Genome:  1287 , Fitness Achieved:  3690.0
+Tick/Tock:  1 , Genome:  1235 , Fitness Achieved:  30237.0
+Tick/Tock:  1 , Genome:  1288 , Fitness Achieved:  4331.0
+Tick/Tock:  0 , Genome:  1289 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1290 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1291 , Fitness Achieved:  7024.0
+Tick/Tock:  0 , Genome:  1292 , Fitness Achieved:  1286.0
+Tick/Tock:  0 , Genome:  1293 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1294 , Fitness Achieved:  16571.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  31368.0
+Tick/Tock:  0 , Genome:  1295 , Fitness Achieved:  16392.0
+Tick/Tock:  1 , Genome:  1296 , Fitness Achieved:  18293.0
+Tick/Tock:  0 , Genome:  1297 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1298 , Fitness Achieved:  3691.0
+Tick/Tock:  0 , Genome:  1299 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1300 , Fitness Achieved:  30298.0
+Tick/Tock:  0 , Genome:  1301 , Fitness Achieved:  3722.0
+Tick/Tock:  0 , Genome:  1302 , Fitness Achieved:  2096.0
+Population's average fitness: 11490.70968 stdev: 10609.28087
+Best fitness: 32227.00000 - size: (14, 3850) - species 4 - id 1149
+Average adjusted fitness: 0.360
+Mean genetic distance 2.435, standard deviation 0.885
+Population of 31 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   49     8  21537.0    0.361    23
+     2   49     8  31368.0    0.365    31
+     3   49     6  30237.0    0.231     1
+     4   48     9  32227.0    0.485     5
+Total extinctions: 0
+Generation time: 1696.408 sec (1313.186 average)
+
+ ****** Running generation 50 ******
+
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50819.0
+Tick/Tock:  1 , Genome:  1303 , Fitness Achieved:  34923.0
+Tick/Tock:  0 , Genome:  1304 , Fitness Achieved:  16383.0
+Tick/Tock:  0 , Genome:  1305 , Fitness Achieved:  2210.0
+Tick/Tock:  0 , Genome:  1306 , Fitness Achieved:  28999.0
+Tick/Tock:  1 , Genome:  1307 , Fitness Achieved:  15857.0
+Tick/Tock:  1 , Genome:  1308 , Fitness Achieved:  31296.0
+Tick/Tock:  0 , Genome:  1309 , Fitness Achieved:  5.0
+Tick/Tock:  1 , Genome:  1235 , Fitness Achieved:  70212.0
+Tick/Tock:  0 , Genome:  1310 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1311 , Fitness Achieved:  1340.0
+Tick/Tock:  0 , Genome:  1312 , Fitness Achieved:  2307.0
+Tick/Tock:  0 , Genome:  1313 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1314 , Fitness Achieved:  16700.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83353.0
+Tick/Tock:  0 , Genome:  1315 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1316 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1317 , Fitness Achieved:  2096.0
+Tick/Tock:  0 , Genome:  1318 , Fitness Achieved:  0.0
+Tick/Tock:  0 , Genome:  1319 , Fitness Achieved:  16442.0
+Tick/Tock:  0 , Genome:  1320 , Fitness Achieved:  16492.0
+Tick/Tock:  0 , Genome:  1321 , Fitness Achieved:  16324.0
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  1 , Genome:  1322 , Fitness Achieved:  37695.0
+Tick/Tock:  0 , Genome:  1323 , Fitness Achieved:  917.0
+Tick/Tock:  1 , Genome:  1324 , Fitness Achieved:  11806.0
+Tick/Tock:  0 , Genome:  1325 , Fitness Achieved:  16613.0
+Tick/Tock:  0 , Genome:  1326 , Fitness Achieved:  562.0
+Tick/Tock:  0 , Genome:  1327 , Fitness Achieved:  5135.0
+Tick/Tock:  1 , Genome:  1328 , Fitness Achieved:  2814.0
+Tick/Tock:  0 , Genome:  1329 , Fitness Achieved:  16452.0
+Population's average fitness: 19611.32258 stdev: 19990.14682
+Best fitness: 83353.00000 - size: (14, 3670) - species 2 - id 495
+Average adjusted fitness: 0.238
+Mean genetic distance 2.463, standard deviation 0.896
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   50     9  50819.0    0.271    24
+     2   50     7  83353.0    0.252     0
+     3   50     7  70212.0    0.246     0
+     4   49     7  44225.0    0.182     6
+Total extinctions: 0
+Generation time: 1258.256 sec (1318.764 average)
+
+ ****** Running generation 51 ******
+
+Tick/Tock:  0 , Genome:  1149 , Fitness Achieved:  44225.0
+Tick/Tock:  0 , Genome:  1330 , Fitness Achieved:  5583.0
+Tick/Tock:  0 , Genome:  1331 , Fitness Achieved:  22006.0
+Tick/Tock:  0 , Genome:  1332 , Fitness Achieved:  16287.0
+Tick/Tock:  0 , Genome:  1333 , Fitness Achieved:  16472.0
+Tick/Tock:  0 , Genome:  1334 , Fitness Achieved:  2221.0
+Tick/Tock:  1 , Genome:  1335 , Fitness Achieved:  15743.0
+Tick/Tock:  1 , Genome:  892 , Fitness Achieved:  50506.0
+Tick/Tock:  0 , Genome:  1336 , Fitness Achieved:  16447.0
+Tick/Tock:  1 , Genome:  1337 , Fitness Achieved:  47036.0
+Tick/Tock:  0 , Genome:  1338 , Fitness Achieved:  3758.0
+Tick/Tock:  0 , Genome:  1339 , Fitness Achieved:  179.0
+Tick/Tock:  0 , Genome:  1340 , Fitness Achieved:  3181.0
+Tick/Tock:  1 , Genome:  1341 , Fitness Achieved:  7001.0
+Tick/Tock:  1 , Genome:  1342 , Fitness Achieved:  22500.0
+Tick/Tock:  0 , Genome:  1343 , Fitness Achieved:  16395.0
+Tick/Tock:  1 , Genome:  1235 , Fitness Achieved:  70101.0
+Tick/Tock:  0 , Genome:  1344 , Fitness Achieved:  1250.0
+Tick/Tock:  0 , Genome:  1345 , Fitness Achieved:  0.0
+Tick/Tock:  1 , Genome:  1346 , Fitness Achieved:  117286.0
+Tick/Tock:  0 , Genome:  1347 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1348 , Fitness Achieved:  28973.0
+Tick/Tock:  0 , Genome:  1349 , Fitness Achieved:  16287.0
+Tick/Tock:  1 , Genome:  495 , Fitness Achieved:  83268.0
+Tick/Tock:  1 , Genome:  1350 , Fitness Achieved:  25902.0
+Tick/Tock:  0 , Genome:  1351 , Fitness Achieved:  16584.0
+Tick/Tock:  0 , Genome:  1352 , Fitness Achieved:  19721.0
+Tick/Tock:  0 , Genome:  1353 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1354 , Fitness Achieved:  16700.0
+Tick/Tock:  0 , Genome:  1355 , Fitness Achieved:  2096.0
+Population's average fitness: 24036.93333 stdev: 26264.93819
+Best fitness: 117286.00000 - size: (12, 3531) - species 3 - id 1346
+
+Best individual in generation 51 meets fitness threshold - complexity: (12, 3531)
+
+real    1041m49.659s
+user    1196m3.938s
+sys     196m40.953s

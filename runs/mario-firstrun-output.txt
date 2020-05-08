@@ -185,6 +185,7 @@ Total extinctions: 0
 Generation time: 191.419 sec (161.807 average)
 
 
+
 ****************************************************************************
 
 Huge output

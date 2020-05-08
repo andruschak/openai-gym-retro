@@ -199,18 +199,29 @@ The scenario.json file contains the done and reward game conditions based on the
 ```
 
 ### basic code outline (from the getting started guide)
-Basic code to 
+Basic code to load the game, create and render the environment.
+
 
 ```
 import retro
 
 def main():
-
+    # define the game to load into the environment
     env = retro.make(game='SuperMarioBros-Nes')
+    # reset observation
     obs = env.reset()
     while True:
+        # env.step returns 4 parameters
+        # obs - object representing your observation of the environment
+        # rew - a floating point number of the reward from the previous action
+        # done - boolean value indicating whether or not to reset the environment
+        # info - a dictionary containing data from the game variables defined in data.json (ex: info[coins])
+        # action = env.action_space.sample() - do a random action
+        # action = [0,0,1,0,0,0,0, 1,1,1,0,0] - mapping out possible actions? need more info
         obs, rew, done, info = env.step(env.action_space.sample())
+        # render the environment onscreen
         env.render()
+        # if the done boolean is set, reset the environment and start again
         if done:
             obs = env.reset()
     env.close()
@@ -257,6 +268,7 @@ min_species_size   = 2
 compatibility_threshold = 2.5
 
 [DefaultGenome]
+# add more information
 # node activation options
 activation_default      = sigmoid
 activation_mutate_rate  = 0.05
