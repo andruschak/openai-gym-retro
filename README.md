@@ -130,7 +130,7 @@ Now that we have successfully installed and tested our environment, lets get som
 Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
-data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. 
+data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. For more information on the variable types, check out this [guide](https://retro.readthedocs.io/en/latest/integration.html#appendix-types)
 
 ```
 {
@@ -199,29 +199,43 @@ The scenario.json file contains the done and reward game conditions based on the
 ```
 
 ### basic code outline (from the getting started guide)
-Basic code to load the game, create and render the environment. Added in comments to make it easier to understand.
+Basic code to load the game, create and render the environment. 
 
+The inputs of are stored in a vector = action = [0,0,1,0,0,0,0,1,1,1,0,0] which is a right button press.
+
+However, we want to use random inputs so the bot doesn't just learn to move right.
 
 ```
+import argparse
 import retro
 
+# SuperMarioBros-Nes
+# SonicTheHedgehog2-Genesis
+parser = argparse.ArgumentParser()
+parser.add_argument('--game', default='SuperMarioBros-Nes', help='the name or path for the game to run')
+parser.add_argument('--state', help='the initial state file to load, minus the extension')
+parser.add_argument('--record', '-r', action='store_true', help='record bk2 movies')
+args = parser.parse_args()
+
 def main():
-    # define the game to load into the environment
-    env = retro.make(game='SuperMarioBros-Nes')
-    # reset observation
+    env = retro.make(args.game, args.state or retro.State.DEFAULT, record=args.record)
     obs = env.reset()
     while True:
         # env.step returns 4 parameters
-        # obs - object representing your observation of the environment
-        # rew - a floating point number of the reward from the previous action
+        # observ - object representing your observation of the environment
+        # reward - a floating point number of the reward from the previous action
         # done - boolean value indicating whether or not to reset the environment
         # info - a dictionary containing data from the game variables defined in data.json (ex: info[coins])
         # action = env.action_space.sample() - do a random action
-        # action = [0,0,1,0,0,0,0, 1,1,1,0,0] - mapping out possible actions? need more info
-        obs, rew, done, info = env.step(env.action_space.sample())
-        # render the environment onscreen
+        # action = [0,0,1,0,0,0,0,1,1,1,0,0] - mapping out possible actions? need more info
+        # print(env.action_space.sample())
+        observ, reward, done, info = env.step(env.action_space.sample())
+        print("Reward: ", reward)
+        # mario - unsigned single byte (8bit); xscrollLo wraps at 255 and increases xscrollHi by 1
+        print("score:", info['score'], "levelLo:", info['levelLo'], "xscrollHi:", info['xscrollHi'], "xscrollLo:", info['xscrollLo'], "scrolling:", info['scrolling'])
+        # sonic2 - unsigned double byte (16bit); makes it a lot easier to work with
+        # print("screen_x_end:", info['screen_x_end'], "x:", info['x'], "y:", info['y'])
         env.render()
-        # if the done boolean is set, reset the environment and start again
         if done:
             obs = env.reset()
     env.close()
@@ -231,6 +245,16 @@ if __name__ == "__main__":
     main()
 
 ```
+
+### replaying
+If the record variable is set, we will save a zipped bk2 playback file (SuperMarioBros-Nes-Level1-1-000000.bk2). You can replay this recording using the included watch.py (python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2).
+
+
+***
+
+# part x. throwing some machine learning into the mix with NEAT
+
+Now that we have our environment working as expected, its time to add in the machine learning component. 
 
 ### NEAT config 
 The NEAT configuration file defines the evolutionary process for our bot. It uses old school windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
@@ -345,20 +369,13 @@ pop = neat.Population(config)
 
 ### statistics and saving 
 
+***
 
-### pickling 
-
-
-### replaying
-The pickle file will be a series of key presses that we can load and replay through retro.  
+# part x. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
 
 ***
 
-# part 5. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
-
-### 
-
-# part 6. Fighting Games - Street Fighter II (SNES)
+# part x. Fighting Games - Street Fighter II (SNES)
 
 ***
 
