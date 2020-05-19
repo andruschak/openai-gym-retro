@@ -449,12 +449,21 @@ Notes
 - xscrollHi increases by 1 every 255 xscrollLo x distance traveled
 - there appears to be a no reward zone at the start of the level
 
+Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
+
+![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence.gif "mario bane")
+
+
 ## Sonic the Hedgehog 2 (Genesis)
 
 Notes
 - 16bit architecture, limiting memory to 2byte chunks
 - xpos variable provided to track sonics position
 - sonic will rock in place depending on the obstacle in front of him. This caused the frame counter to never reset when sonic got stuck - forcing the full 9m59s before trying again
+
+Similarily to mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
+
+![sonic bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-sonics-existence.gif "sonic bane")
 
 
 ***
