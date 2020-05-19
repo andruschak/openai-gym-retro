@@ -124,7 +124,7 @@ it's a me, mario!
 ***
 
 # part 4. basic outline and concepts
-Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take account coin + xscrollLo for example.
+Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take into account coin or rings for example.
 
 ## integrations
 Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
@@ -201,9 +201,6 @@ The scenario.json file contains the done and reward game conditions based on the
 ### basic code outline
 Basic code to load the game, create and render the environment. 
 
-The inputs of are stored in a vector = action = [0,0,1,0,0,0,0,1,1,1,0,0] which is a right button press.
-
-However, we want to use random inputs so the bot doesn't just learn to move right.
 
 ```
 import argparse
@@ -230,7 +227,6 @@ def main():
         # done - boolean value indicating whether or not to reset the environment
         # info - a dictionary containing data from the game variables defined in data.json (ex: info[coins])
         # action = env.action_space.sample() - do a random action
-        # action = [0,0,1,0,0,0,0,1,1,1,0,0] - input vector (right button press)
         # print(env.action_space.sample())
         observ, reward, done, info = env.step(env.action_space.sample())
 
@@ -255,9 +251,39 @@ if __name__ == "__main__":
 
 ```
 
-### replaying
-If the record variable is set, we will save a zipped bk2 playback file (SuperMarioBros-Nes-Level1-1-000000.bk2). You can replay this recording using the included watch.py (python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2).
 
+## other tips & tricks
+Here are a few tidbits I found while diggging around.
+
+### replaying
+If the record variable is set, we will save a zipped bk2 playback file for each environment rendered. You can replay this recording using the included watch.py 
+
+`python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2).`
+
+### retro/examples
+[interactive mode](https://github.com/openai/retro/blob/master/retro/examples/retro_interactive.py) will let you play the game using your keyboard.
+
+[discreditizer](https://github.com/openai/retro/blob/master/retro/examples/discretizer.py) will let you can define your own set of button presses. This is something I want to investigate. Why have mario press up?
+
+### console.json
+You can look at the keybindings for the various emulators. The controller layouts are prsented as a list of actions. for ex: [0,0,1,0,0,0,0,1,1,1,0,0] (right button press).
+
+nes.json for example:
+```
+{
+    "Nes": {
+        "lib": "fceumm",
+        "ext": ["nes"],
+        "keybinds": ["Z", null, "TAB", "ENTER", "UP", "DOWN", "LEFT", "RIGHT", "X"],
+        "buttons": ["B", null, "SELECT", "START", "UP", "DOWN", "LEFT", "RIGHT", "A"],
+        "actions": [
+            [[], ["UP"], ["DOWN"]],
+            [[], ["LEFT"], ["RIGHT"]],
+            [[], ["A"], ["B"], ["A", "B"]]
+        ]
+    }
+}
+```
 
 ***
 
@@ -273,11 +299,11 @@ The NEAT configuration file defines the evolutionary process for our bot. It use
 
 [NEAT]
 # fitness_criterion:    the function used to compute the termination criterion from the set of genome fitnesses (max, min, mean)
-# fitness_threshold:	when the fitness_critera meets this threshold the evolution process will terminate
+# fitness_threshold:	  when the fitness_critera meets this threshold the evolution process will terminate
 # pop_size:             the amount of individuals in each generation
 fitness_criterion     = max
 fitness_threshold     = 100000
-pop_size              = 30
+pop_size              = 25
 reset_on_extinction   = True
 
 [DefaultStagnation]
@@ -286,7 +312,7 @@ reset_on_extinction   = True
 # species_elitism:      number of species that will be protected from stagnation; prevents extinction events (def: 2)
 species_fitness_func = max
 max_stagnation       = 50
-species_elitism      = 0
+species_elitism      = 2
 
 [DefaultReproduction]
 # elitism:              the number of most-fit individuals who will be preserved from one generation to the next (def: 0)
@@ -380,7 +406,24 @@ pop = neat.Population(config)
 
 ***
 
-# part x. Platformers - Super Mario Bros (NES) & Sonic the Hedgehog 2 (Genesis)
+# part x. Platformers
+
+ 
+
+## Super Mario Bros (NES)
+
+Notes
+- 8bit architecture, limiting memory to 1byte chunks
+- xscrollHi increases by 1 every 255 xscrollLo x distance traveled
+- there appears to be a no reward zone at the start of the level
+
+## Sonic the Hedgehog 2 (Genesis)
+
+Notes
+- 16bit architecture, limiting memory to 2byte chunks
+- xpos variable provided to track sonics position
+- sonic will rock in place depending on the obstacle in front of him. This caused the frame counter to never reset when sonic got stuck - forcing the full 9m59s before trying again
+
 
 ***
 
