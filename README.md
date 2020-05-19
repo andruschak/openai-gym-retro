@@ -130,7 +130,7 @@ Now that we have successfully installed and tested our environment, lets get som
 Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
-data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. For more information on the variable types, check out this [guide](https://retro.readthedocs.io/en/latest/integration.html#appendix-types)
+data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. For more information on the variable types, check out this [Guide](https://retro.readthedocs.io/en/latest/integration.html#appendix-types)
 
 ```
 {
@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
 
 ## other tips & tricks
-Here are a few tidbits I found while diggging around.
+Here are a few tidbits I found while digging around.
 
 ### replaying
 If the record variable is set, we will save a zipped bk2 playback file for each environment rendered. You can replay this recording using the included watch.py 
@@ -263,10 +263,12 @@ If the record variable is set, we will save a zipped bk2 playback file for each 
 ### retro/examples
 [interactive mode](https://github.com/openai/retro/blob/master/retro/examples/retro_interactive.py) will let you play the game using your keyboard.
 
-[discreditizer](https://github.com/openai/retro/blob/master/retro/examples/discretizer.py) will let you can define your own set of button presses. This is something I want to investigate. Why have mario press up?
+[discreditizer](https://github.com/openai/retro/blob/master/retro/examples/discretizer.py) will let you can define your own set of button presses. 
 
 ### console.json
-You can look at the keybindings for the various emulators. The controller layouts are prsented as a list of actions. for ex: [0,0,1,0,0,0,0,1,1,1,0,0] (right button press).
+You can look at the keybindings for the various emulators. The controller layouts are presented as a list of actions. 
+
+for ex: [0,0,1,0,0,0,0,1,1,1,0,0]
 
 nes.json for example:
 ```
@@ -287,7 +289,7 @@ nes.json for example:
 
 ***
 
-# part x. throwing some machine learning into the mix with NEAT
+# part x. toss some machine learning into the mix
 
 Now that we have our environment working as expected, its time to add in the machine learning component. 
 
@@ -299,7 +301,7 @@ The NEAT configuration file defines the evolutionary process for our bot. It use
 
 [NEAT]
 # fitness_criterion:    the function used to compute the termination criterion from the set of genome fitnesses (max, min, mean)
-# fitness_threshold:	  when the fitness_critera meets this threshold the evolution process will terminate
+# fitness_threshold:    when the fitness_critera meets this threshold the evolution process will terminate
 # pop_size:             the amount of individuals in each generation
 fitness_criterion     = max
 fitness_threshold     = 100000
@@ -403,6 +405,36 @@ pop = neat.Population(config)
 ```
 
 ### statistics and saving 
+NEAT has a bunch of statistics we can report on. We also have the ability to save training checkpoints.
+
+```
+# StdOutReporter(show_species_detail (bool)) – show additional details about each species in the population
+pop.add_reporter(neat.StdOutReporter(True))
+stats = neat.StatisticsReporter()
+pop.add_reporter(stats)
+# uncomment to create a checkpoint every x generations
+# pop.add_reporter(neat.Checkpointer(5))
+
+# if you've already done some training
+# pop = neat.Checkpointer.restore_checkpoint('neat-checkpoint-5')
+```
+
+example output:
+```
+Population's average fitness: 90.43333 stdev: 100.55535
+Best fitness: 322.00000 - size: (12, 4297) - species 3 - id 83
+Average adjusted fitness: 0.284
+Mean genetic distance 2.236, standard deviation 0.575
+Population of 30 members in 4 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2     2    186.0    0.116     2
+     2    2     5    202.0    0.282     0
+     3    2    14    322.0    0.313     0
+     4    1     9    202.0    0.425     0
+Total extinctions: 0
+Generation time: 199.665 sec (165.241 average)
+```
 
 ***
 
