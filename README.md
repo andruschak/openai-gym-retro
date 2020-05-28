@@ -451,7 +451,7 @@ Notes
 
 Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
 
-![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence.gif "mario bane")
+![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence2.gif "mario bane")
 
 
 ## Sonic the Hedgehog 2 (Genesis)
@@ -463,7 +463,7 @@ Notes
 
 Similarily to mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
 
-![sonic bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-sonics-existence.gif "sonic bane")
+![sonic bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-sonics-existence2.gif "sonic bane")
 
 
 ***
