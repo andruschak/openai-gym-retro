@@ -5,16 +5,20 @@
 # part 1. what is this all about
 Leveraging machine learning, specifically reinforcement learning, to train a bot to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
+Much of the heavy lifting is done for us by utilizing open source libraries and tutorials that can be found online (reference list at the bottom of the page). While I mainly build on what those have done before me, I add my own original contributions. 
+
 ## inspiration
 There are several reasons I am interested in this project:
 
-The original [marI/O](https://www.youtube.com/watch?v=qv6UVOQ0F44) youtube video inspired me to learn about neuro-networks and the ability to apply them in the same way. Much of the heavy lifting is done for us by utilizing open source libraries and tutorials that can be found online (reference list at the bottom of the page). While I mainly build on what those have done before me, I try and add my own original contributions in the form of tweaks to environment configs and rewards as well as comparisons of different approaches.
-
-Since the release of open-ai's framework, I have also seen other examples of people using gym environments to model real life physics in order to train [thrust vectoring rockets](https://github.com/EmbersArc/gym_rocketLander) and [rex the domestic robot](https://github.com/nicrusso7/rex-gym/blob/master/README.md).
-
-If you have looked at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
-
 To keep learning and continue programming (use it or lose it).
+
+The original [marI/O](https://www.youtube.com/watch?v=qv6UVOQ0F44) youtube video inspired me to learn about neuro-networks and the ability to apply them in the same way. 
+
+Since the release of open-ai's framework, I have also seen other examples of people using gym environments to model real life physics in order to train: 
+* [thrust vectoring rockets](https://github.com/EmbersArc/gym_rocketLander)
+* [rex the domestic robot](https://github.com/nicrusso7/rex-gym/blob/master/README.md).
+
+Take a look at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
 
 Finally, this project touches on so many cool topics; `classic video games`, `emulation`, `machine learning`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `computer vision`, `python3`, `linux on windows.` 
 
@@ -42,14 +46,15 @@ Useful in games with with frequent and incremental rewards where most of the dif
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
 
 ## software
-### Windows Subsystem for Linux 
-[WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) allows us to run the linux environment inside Windows. Launch bash and go. I used ubuntu 18.04 as my linux distro. 
+* [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) allows us to run the linux environment inside Windows. Launch bash and go. I used ubuntu 18.04 as my linux distro. 
 
-[chocolatey](https://chocolatey.org/) is a package manager for Windows. I use this to install most of my software and [XMING](http://www.straightrunning.com/XmingNotes/) is no different. It is an X Server for Windows. Allows us to render the emulator output. 
+* [chocolatey](https://chocolatey.org/) is a package manager for Windows. I use this to install most of my software and [XMING](http://www.straightrunning.com/XmingNotes/) is no different. It is an X Server for Windows. Allows us to render the emulator output. 
 
-### python 3.6.9
-[python](www.python.org) the language we will be programming in. This came included in the wsl ubuntu environment we installed
+* [windows terminal](https://aka.ms/PowerShell-Release?tag=v7.1.1)
+ 
+* [python](www.python.org) the language we will be programming in. This came included in the wsl ubuntu environment we installed. Was python 3.6.9 at time of writing
 
+## libraries
 ### OpenAI Gym Retro
 [OpenAI Gym Retro](https://openai.com/blog/gym-retro/) enables an interface between python and emulated video games. It sets up an environment for reinforcement learning and comes with integrations for ~1000 games. It uses various emulators that support the Libretro API.
 
@@ -68,52 +73,57 @@ To evolve a solution to a problem, provide a fitness function which computes a s
 These reproduction and mutation operations may add nodes and/or connections to genomes, so as the algorithm proceeds genomes (and the neural networks they produce) may become more and more complex. When the preset number of generations is reached, or when at least one individual (for a fitness criterion function of max; others are configurable) exceeds the user-specified fitness threshold, the algorithm terminates.
 
 ### OpenCV
-[OpenCV](https://opencv.org/) is an open source computer vision library. It is amazing in it's own right. I have played with opencv a few times over the years - [skeletal detection - Kinect/SDK](https://www.youtube.com/watch?v=bBsXQb-j9vk) and [facial recognition](https://www.youtube.com/watch?v=onjW4iA1Ai4) 
+[OpenCV](https://opencv.org/) is an open source computer vision library. It is amazing in it's own right. I have played with opencv a few times over the years:
+* [skeletal detection - Kinect/SDK](https://www.youtube.com/watch?v=bBsXQb-j9vk)
+* [facial recognition](https://www.youtube.com/watch?v=onjW4iA1Ai4) 
 
 In this case we will use it to transform each frame of the game into a lower resolution, grayscale image making it easier to process. 
 
-***
+## Windows Subsystem for Linux
+
+Since my original work on this project, WSL went from v1 to v2. Instead of being "integrated" into the OS it now runs as a container. This completely changes several key components, such as networking. Because of this, we need to change how we interact with x-windows.  
+
+### Windows Subsystem for Linux - WSL2
+
+## paths
+
+~/ai/env/lib/python3.8/site-packages/retro/data/stable/<games>
 
 ## setting up the environment
 
 windows
 ```
-choco install xming
-
-# optional: [cli method](https://docs.microsoft.com/en-us/windows/wsl/install-win10) for installing wsl and download/setup ubuntu 16.04 LTS
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
+choco install vcxsrv
 ```
 
-ubuntu wsl (windows subsystem for linux)
+ubuntu wsl container
 ```
-sudo apt-get update
+sudo hwclock --hctosys          # sudo apt update error: “Release file is not yet valid”
+sudo apt update && sudo apt upgrade
+sudo apt install python3-venv
 sudo apt install python3-pip
-sudo apt install python3-opencv // pip install resulted in core dump
-
+mkdir ~/ai
+python3 -m venv ai              # create a virtual environment
+cd ~/ai
+source env/bin/activate
+pip3 install "pyglet<1.5"       # was required to be <1.5 for retro
 pip3 install gym-retro
 pip3 install neat-python
-pip3 install opencv-python // did not work, resulted in segfaults
+pip3 install opencv-python
 ```
-
-### default paths for retro
-`/.local/lib/python3.6/site-packages/retro`
-
-### import roms
-`/retro/scripts/python3 import_path.py /path/to/rom/file/nes/`
-
 
 ### running the simulation
 Lets run a demo to see if everything is working. We will try and load an example agent (random button presses) to play Super Mario Bros Level 1-1. Since we are running this in windows we need to start our x-server app and export the linux DISPLAY.
 
 windows
 ```
-start xming
+start vcxsrv with the following settings
+<insert picture here>
 ```
 
-ubuntu wsl
+ubuntu wsl container
 ```
-export DISPLAY=:0.0
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 python3 /examples/random_agent.py --game SuperMarioBros-Nes --state Level1-1
 
 ```
@@ -125,14 +135,18 @@ it's a me, mario!
 
 ***
 
+
+
 # part 4. basic outline and concepts
 Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take into account coin or rings for example.
 
 ## integrations
-Setting up the environment for reinforment learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
+Setting up the environment for reinforcement learning. It enables the game be ran through the python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
 data.json contains references to memory locations for specific game attributes. As you can see by the SuperMarioBros-Nes example. These have been mapped out using retro integration tool. For more information on the variable types, check out this [Guide](https://retro.readthedocs.io/en/latest/integration.html#appendix-types)
+
+By utilizing the various attributes in info[] I hope to make the bot more effective. For example, we can increase the fitness score when coins/rings are collected or slightly decrease the score when moving in the wrong direction. 
 
 ```
 {
@@ -296,7 +310,7 @@ nes.json for example:
 Now that we have our environment working as expected, its time to add in the machine learning component. 
 
 ### NEAT config 
-The NEAT configuration file defines the evolutionary process for our bot. It uses old school windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
+The NEAT configuration file defines the evolutionary process for our bot. It uses old windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
 
 ```
 # NEAT configuration file
@@ -442,9 +456,19 @@ Generation time: 199.665 sec (165.241 average)
 
 # part x. Platformers
 
- 
+Going to start here as these seem to be the easiest models to train.
 
 ## Super Mario Bros (NES)
+
+Brainstorming
+- only care about moving forward, increasing x distance
+- add fitness bonus for reaching specific x distance
+- add fitness for each coin collected
+- add fitness for an increase in score; collecting coins/power ups, killing mobs, other ways to incrase? 
+- add fitness when mario get a power up; mushroom, fireflower, star? like wise decrease fitness when lost
+- decrease fitness for going the wrong way
+- end turn if no movement for x frames
+- others?
 
 Notes
 - 8bit architecture, limiting memory to 1byte chunks
@@ -458,10 +482,17 @@ Mario never made it past this point in my initial training. After over 300 runs,
 
 ## Sonic the Hedgehog 2 (Genesis)
 
+Brainstorming
+- possible to get stuck in a rocking motion - as seen in the gif
+- backtracking might be a better strategy in some cases?
+- rings can be gotten and lost; each coin grants fitness. what about loss?
+- add fitness for increased score
+- add fitness for collecting power ups. some wear off, some dont
+
 Notes
 - 16bit architecture, limiting memory to 2byte chunks
 - xpos variable provided to track sonics position
-- sonic will rock in place depending on the obstacle in front of him. This caused the frame counter to never reset when sonic got stuck - forcing the full 9m59s before trying again
+- sonic will rock in place depending on the obstacle in front of him. This caused the frame counter to never reset when sonic got stuck - forcing the full 9m59s before trying again. Should do a xpos max count, if not increased over x frames, terminate.
 
 Similarily to mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
 
