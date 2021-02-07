@@ -1,5 +1,7 @@
 # openai-gym-retro
 
+# table of contents
+
 # part 1. what is this all about
 Leveraging machine learning, specifically reinforcement learning, to train a bot to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
