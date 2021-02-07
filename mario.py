@@ -27,19 +27,23 @@ def eval_genomes(genomes, config):
         # create the RNN
         network = neat.nn.recurrent.RecurrentNetwork.create(genome, config)
         
-        # tracking variables
+        # tracking variables      
         current_max_fitness = 0
         fitness_current = 0
         frame = 0
         counter = 0
-        xpos = 0
-        xpos_max = 0
+        done = False
+       
+        # see data.json in the game dir
+        # do we care about time or lives?
+        xscrollLo = 0
+        xscrollHi = 0
         coins = 0
         coins_max = 0
         score = 0
         score_max = 0
-        done = False
 
+        
         while not done:
 
             # render the environment on screen. comment out to speed up
@@ -63,11 +67,16 @@ def eval_genomes(genomes, config):
             # info - a dictionary containing data from the game variables defined in data.json (ex: info[coins])
             observ, reward, done, info = env.step(nnOutput)
             
+            # extract x distance's traveled
+            # note - because we are limited to 8bit, there are 2 counters for distance traveled 
+            # xscrollHi increases by 1 every 255 xscrollLo x distance traveled
+            xscrollLo = info['xscrollLo']
+            xscrollHi = info['xscrollHi']
+
             # extract variables for bonus fitness
             coins = info['coins']
             score = info['score']
-
-            
+                        
             # run various checks for bonus fitness
             # if mario gets a coin add to fitness
             
@@ -75,21 +84,12 @@ def eval_genomes(genomes, config):
             
             # need custom variable to check for powerup
 
-            # xscrollHi increases by 1 every 255 xscrollLo x distance traveled
             # if xscrollHi increases add to fitness
             # if xscrollHi = x? then mario completed the mission
 
             # check for stalls and penalize
 
             
-            #fitness_current += reward
-            
-            #if fitness_current > current_max_fitness:
-            #    current_max_fitness = fitness_current
-            #    counter = 0
-            #else:
-            #    counter += 1
-
             # done tripped, exit
             if done == True:
                 print("Genome: ", genome_id, ", Fitness Achieved: ", fitness_current)
