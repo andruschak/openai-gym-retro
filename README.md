@@ -7,6 +7,8 @@ Leveraging machine learning, specifically reinforcement learning, to train a bot
 
 Much of the heavy lifting is done for us by utilizing open source libraries and tutorials that can be found online (reference list at the bottom of the page). While I mainly build on what those have done before me, I add my own original contributions. 
 
+This tutorial is for educational purposes only.
+
 ## Inspiration
 There are several reasons I am interested in this project:
 
@@ -26,7 +28,7 @@ There are several reasons I am interested in this project:
 
 # Part 2. Definitions
 
-### reinforcement learning (RL)
+### Reinforcement Learning (RL)
 From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
 
 ### Recurrent Neural Network (RNN)
@@ -46,13 +48,13 @@ To do - for Fighting Games
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
 
 ## Software
-* [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) allows us to run the linux environment inside Windows. Launch bash and go. I used ubuntu 20.04 as my linux distro. 
+* [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) allows us to run the linux environment inside Windows. This changed from v1 (ubuntu 18.04) to v2 during this project. It used to be launch bash and go. Now it is run as a container. I used ubuntu 20.04 as my linux distro for v2. 
 
 * [chocolatey](https://chocolatey.org/) is a package manager for Windows. I use this to install most of my software and [XMING](http://www.straightrunning.com/XmingNotes/) is no different. It is an X Server for Windows. Allows us to render the emulator output. 
 
 * [windows terminal](https://aka.ms/PowerShell-Release?tag=v7.1.1) improved windows terminal. Easiest way to interact with the powershell and the ubuntu container
  
-* [python](www.python.org) the language we will be programming in. This came included in the wsl ubuntu environment we installed. Was python 3.6.9 at time of writing
+* [python](www.python.org) the language we will be programming in. With WSL2 we are using python 3.8. On WSL1 it was 3.6.9.
 
 ## Libraries
 ### OpenAI Gym Retro
@@ -481,9 +483,7 @@ Notes
 - xscrollHi increases by 1 every 255 xscrollLo x distance traveled
 - there appears to be a no reward zone at the start of the level
 
-Initial training
-
-- Results = Failure :: Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
+- May 2020 - Results = Failure :: Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
 
 ![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence2.gif "mario bane")
 
@@ -505,7 +505,7 @@ Notes
 
 Initial training
 
-- Results = Failure :: As with mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
+- May 2020 - Results = Failure :: As with mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
 
 ![sonic bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-sonics-existence2.gif "sonic bane")
 
@@ -516,9 +516,9 @@ Initial training
 
 ***
 
-# Part 7. reflection on what we've covered
+# Part 7. Reflection on what we've covered
 
-### challenges
+### Challenges
 Successfully playing games isnt always easy. Platformer games like Mario and Sonic can achieve success simply by increasing your x-coordinates until you reach a target. But what about games that require the player to solve unique puzzles or back track after finding a key later on?
 
 
@@ -526,7 +526,12 @@ Successfully playing games isnt always easy. Platformer games like Mario and Son
 
 ### References
 
-[MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44)
+1. [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44)
 
-[Lucasthompsons youtube tutorials](https://www.youtube.com/playlist?list=PLTWFMbPFsvz3CeozHfeuJIXWAJMkPtAdS)
-[Lucasthompsons gitlab repo](https://gitlab.com/lucasrthompson/Sonic-Bot-In-OpenAI-and-NEAT)
+2. [Lucasthompsons youtube tutorials](https://www.youtube.com/playlist?list=PLTWFMbPFsvz3CeozHfeuJIXWAJMkPtAdS)
+
+3. [Lucasthompsons gitlab repo](https://gitlab.com/lucasrthompson/Sonic-Bot-In-OpenAI-and-NEAT)
+
+4. [Gym Retro Documentation](https://retro.readthedocs.io/en/latest/getting_started.html)
+
+5. [NEAT Documentation](https://neat-python.readthedocs.io/en/latest/)
