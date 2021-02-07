@@ -1,13 +1,13 @@
-# openai-gym-retro
+# Openai-gym-retro
 
-# table of contents
+# Table of contents
 
-# part 1. what is this all about
+# Part 1. What is this all about
 Leveraging machine learning, specifically reinforcement learning, to train a bot to play classic emulated video games using Open-AI gym-retro. At the end of the day, I would like to understand how to make it play a couple different genre's - platformers (Mario and Sonic) and fighting games (Street Figher II).
 
 Much of the heavy lifting is done for us by utilizing open source libraries and tutorials that can be found online (reference list at the bottom of the page). While I mainly build on what those have done before me, I add my own original contributions. 
 
-## inspiration
+## Inspiration
 There are several reasons I am interested in this project:
 
 - To keep learning and continue programming (use it or lose it).
@@ -24,7 +24,7 @@ There are several reasons I am interested in this project:
 
 ***
 
-# part 2. some definitions
+# Part 2. Definitions
 
 ### reinforcement learning (RL)
 From wikipedia: "Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize some notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning." 
@@ -40,12 +40,12 @@ To do - for Fighting Games
 
 ***
 
-# part 3. environment
+# Part 3. Environment
 
-## hardware
+## Hardware
 Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909 
 
-## software
+## Software
 * [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) allows us to run the linux environment inside Windows. Launch bash and go. I used ubuntu 20.04 as my linux distro. 
 
 * [chocolatey](https://chocolatey.org/) is a package manager for Windows. I use this to install most of my software and [XMING](http://www.straightrunning.com/XmingNotes/) is no different. It is an X Server for Windows. Allows us to render the emulator output. 
@@ -54,7 +54,7 @@ Microsoft Surface Laptop 3 - i7/16GB - Windows 10 Pro 1909
  
 * [python](www.python.org) the language we will be programming in. This came included in the wsl ubuntu environment we installed. Was python 3.6.9 at time of writing
 
-## libraries
+## Libraries
 ### OpenAI Gym Retro
 [OpenAI Gym Retro](https://openai.com/blog/gym-retro/) enables an interface between python and emulated video games. It sets up an environment for reinforcement learning and comes with integrations for ~1000 games. It uses various emulators that support the Libretro API.
 
@@ -87,7 +87,7 @@ Since my original work on this project, WSL went from v1 to v2. Instead of being
 
 ### Windows Subsystem for Linux - WSL2
 
-## setting up the environment
+## Setting up the environment
 
 windows
 ```
@@ -110,10 +110,10 @@ pip3 install neat-python
 pip3 install opencv-python
 ```
 
-### windows firewall
+### Windows Firewall
 We need to add a rule or disable (bad idea) the Public Firewall for vcXsrv to recieve connections from the container. This is a big change from WSL1. 
 
-### running the simulation
+### Running the simulation
 Lets run a demo to see if everything is working. We will try and load an example agent (random button presses) to play Super Mario Bros Level 1-1. Since we are running this in windows we need to start our x-server app and export the linux DISPLAY.
 
 windows
@@ -129,8 +129,8 @@ python3 /examples/random_agent.py --game SuperMarioBros-Nes --state Level1-1
 
 ```
 
-## success!
-it's a me, mario!
+## Success!
+It's a me, mario!
 
 ![random mariobros](https://github.com/andruschak/openai-gym-retro/raw/master/images/mario-random.gif "random mariobros")
 
@@ -138,10 +138,10 @@ it's a me, mario!
 
 
 
-# part 4. basic outline and concepts
+# Part 4. Basic outline and concepts
 Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take into account coin or rings for example.
 
-## integrations
+## Integrations
 Setting up the environment for reinforcement learning. It enables the game be ran through via a python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
 
 ### data.json
@@ -215,7 +215,7 @@ The scenario.json file contains the done and reward game conditions based on the
 }
 ```
 
-### basic code outline
+### Basic code outline
 Basic code to load the game, create and render the environment. 
 
 
@@ -269,10 +269,10 @@ if __name__ == "__main__":
 ```
 
 
-## other tips & tricks
+## Other tips & tricks
 Here are a few tidbits I found while digging around.
 
-### replaying
+### Replaying
 If the record variable is set, we will save a zipped bk2 playback file for each environment rendered. You can replay this recording using the included watch.py 
 
 `python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2).`
@@ -306,7 +306,7 @@ nes.json for example:
 
 ***
 
-# part 5. adding machine learning into the mix
+# Part 5. Adding machine learning into the mix
 
 Now that we have our environment working as expected, its time to add in the machine learning component. 
 
@@ -426,7 +426,7 @@ config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultS
 pop = neat.Population(config)
 ```
 
-### statistics and saving 
+### Statistics and saving 
 NEAT has a bunch of statistics we can report on. We also have the ability to save training checkpoints.
 
 ```
@@ -460,7 +460,7 @@ Generation time: 199.665 sec (165.241 average)
 
 ***
 
-# part x. Platformers
+# Part 5. Platformers
 
 Going to start here as these seem to be the easiest models to train.
 
@@ -487,6 +487,7 @@ Initial training
 
 ![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence2.gif "mario bane")
 
+***
 
 ## Sonic the Hedgehog 2 (Genesis)
 
@@ -511,11 +512,11 @@ Initial training
 
 ***
 
-# part x. Fighting Games - Street Fighter II (SNES)
+# Part 6. Fighting Games - Street Fighter II (SNES)
 
 ***
 
-# part X. reflection on what we've covered
+# Part 7. reflection on what we've covered
 
 ### challenges
 Successfully playing games isnt always easy. Platformer games like Mario and Sonic can achieve success simply by increasing your x-coordinates until you reach a target. But what about games that require the player to solve unique puzzles or back track after finding a key later on?
@@ -523,8 +524,7 @@ Successfully playing games isnt always easy. Platformer games like Mario and Son
 
 ***
 
-### references
-
+### References
 
 [MarI/O - Machine Learning for Video Games](https://www.youtube.com/watch?v=qv6UVOQ0F44)
 
