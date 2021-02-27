@@ -14,7 +14,7 @@ def eval_genomes(genomes, config):
     for genome_id, genome in genomes:
         
         # reset environment for each
-        ob = env.reset()
+        observ = env.reset()
 
         # load the default action sample - random action/button press
         action = env.action_space.sample()
@@ -37,11 +37,17 @@ def eval_genomes(genomes, config):
         # see data.json in the game dir
         # do we care about time or lives?
         xscrollLo = 0
+        xscrollLo_prev = 0
         xscrollHi = 0
+        xscrollHi_prev = 0
         coins = 0
         coins_max = 0
         score = 0
         score_max = 0
+        lives = 2
+        time = 0
+        scrolling = 0
+        status = ""
 
         
         while not done:
@@ -52,11 +58,11 @@ def eval_genomes(genomes, config):
             frame += 1
             
             # convert into grayscale
-            ob = cv2.resize(ob, (inx, iny))
-            ob = cv2.cvtColor(ob, cv2.COLOR_BGR2GRAY)
-            ob = np.reshape(ob, (inx,iny))
+            observ = cv2.resize(observ, (inx, iny))
+            observ = cv2.cvtColor(observ, cv2.COLOR_BGR2GRAY)
+            observ = np.reshape(observ, (inx,iny))
 
-            imgarray = np.ndarray.flatten(ob)
+            imgarray = np.ndarray.flatten(observ)
 
             nnOutput = network.activate(imgarray)
             
@@ -76,23 +82,54 @@ def eval_genomes(genomes, config):
             # extract variables for bonus fitness
             coins = info['coins']
             score = info['score']
+
+            # other variables
+            lives = info['lives']
+            time = info['time']
+            scrolling = info['scrolling']
                         
             # run various checks for bonus fitness
             # if mario gets a coin add to fitness
-            
+            if coins > coins_max:
+                fitness_current += 100
+                coins_max = coins
+
             # if mario's score increases add to fitness 
-            
+            if score > score_max:
+                fitness_current += 100
+                score_max = score
+                
             # need custom variable to check for powerup
 
             # if xscrollHi increases add to fitness
             # if xscrollHi = x? then mario completed the mission
+            # buggy because lo wraps
+            if xscrollLo > xscrollLo_prev:
+                # bonus for each wrap on xLo increasing xHi
+                if xscrollHi > xscrollHi_prev:
+                    fitness_current += 1000
+                    xscrollHi_prev = xscrollHi
+                fitness_current += 10
+                xscrollLo_prev = xscrollLo
+                counter = 0
+            else:
+                counter += 1
+                fitness_current -= 0.1
+ 
+            # check for stalls, 
+            # 1000 is approx ~49s game time, 800 is ~
+            if counter == 800:
+                status = "stalled"
+                done = True  
 
-            # check for stalls and penalize
-
+            # check lives, if less than 2 mario died, set done to True
+            if lives < 2:
+                status = "dead"
+                done = True  
             
             # done tripped, exit
             if done == True:
-                print("Genome: ", genome_id, ", Fitness Achieved: ", fitness_current)
+                print("Genome:", genome_id,", Fitness Achieved:", fitness_current,", xLo:", xscrollLo,", xHi:", xscrollHi,", time:", time,", score:", score,", coins:", coins,", status:", status)
                 
             # total genome fitness for this round
             genome.fitness = fitness_current
