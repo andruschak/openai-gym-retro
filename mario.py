@@ -101,9 +101,8 @@ def eval_genomes(genomes, config):
                 
             # need custom variable to check for powerup
 
-            # if xscrollHi increases add to fitness
-            # if xscrollHi = x? then mario completed the mission
-            # buggy because lo wraps, not sure about penalty either (impacts distance then stall)
+            # as xscrollLo increases add to fitness
+            # we need to wait the wrap of lo. once xscrollLo_prev hits 255 we need to reset
             if xscrollLo > xscrollLo_prev:
                 fitness_current += 10
                 xscrollLo_prev = xscrollLo
@@ -113,11 +112,17 @@ def eval_genomes(genomes, config):
                 fitness_current -= 0.1
  
             # bonus for each xscrollHi increase
+            # reset the xscrollLo_prev as outlined above
             if xscrollHi > xscrollHi_prev:
-                print("Bonus xHi")
                 fitness_current += 1000
                 xscrollHi_prev = xscrollHi
                 xscrollLo_prev = 0
+
+            # if xscrollHi = x? then mario completed the mission, bonus fitness max and end
+            # still need to determine end of mission
+            # if xscrollHi > 15:
+            #   fitness_current += 100000
+            #   done = True
 
             # check for stalls, 
             # 1000 is approx ~50s game time, 800 = 40s ~, 400 = ~20s
