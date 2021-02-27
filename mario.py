@@ -91,24 +91,20 @@ def eval_genomes(genomes, config):
             # run various checks for bonus fitness
             # if mario gets a coin add to fitness
             if coins > coins_max:
-                fitness_current += 100
+                fitness_current += 1000
                 coins_max = coins
 
             # if mario's score increases add to fitness 
             if score > score_max:
-                fitness_current += 100
+                fitness_current += 250
                 score_max = score
                 
             # need custom variable to check for powerup
 
             # if xscrollHi increases add to fitness
             # if xscrollHi = x? then mario completed the mission
-            # buggy because lo wraps
+            # buggy because lo wraps, not sure about penalty either (impacts distance then stall)
             if xscrollLo > xscrollLo_prev:
-                # bonus for each wrap on xLo increasing xHi
-                if xscrollHi > xscrollHi_prev:
-                    fitness_current += 1000
-                    xscrollHi_prev = xscrollHi
                 fitness_current += 10
                 xscrollLo_prev = xscrollLo
                 counter = 0
@@ -116,15 +112,22 @@ def eval_genomes(genomes, config):
                 counter += 1
                 fitness_current -= 0.1
  
+            # bonus for each xscrollHi increase
+            if xscrollHi > xscrollHi_prev:
+                print("Bonus xHi")
+                fitness_current += 1000
+                xscrollHi_prev = xscrollHi
+                xscrollLo_prev = 0
+
             # check for stalls, 
-            # 1000 is approx ~49s game time, 800 is ~
-            if counter == 800:
+            # 1000 is approx ~50s game time, 800 = 40s ~, 400 = ~20s
+            if counter == 400:
                 status = "stalled"
                 done = True  
 
             # check lives, if less than 2 mario died, set done to True
             if lives < 2:
-                status = "dead"
+                status = "died"
                 done = True  
             
             # done tripped, exit
