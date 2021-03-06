@@ -22,7 +22,7 @@ There are several reasons I am interested in this project:
 
 - Take a look at my [arcade machine](https://github.com/andruschak/arcade-machine) build you will know I am a long time gamer. As a kid, I was lucky enough to have owned most of the nintendo/sega consoles at one time or another. 
 
-- Finally, this project touches on so many cool topics; `classic video games`, `emulation`, `machine learning`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `computer vision`, `python3`, `linux on windows.` 
+- Finally, this project touches on so many cool topics; `classic video games`, `emulation`, `machine learning`, `gamegenie like memory manipulation`, `neuro-networks`, `evolution`, `biology`, `genome`, `computer vision`, `python3`, `linux on windows.` 
 
 ***
 
@@ -39,6 +39,13 @@ Useful in games with with frequent and incremental rewards where most of the dif
 
 ### Actor&Critic (A&C)
 To do - for Fighting Games
+
+### Biology Terms
+To do
+  - species 
+  - genome 
+  - evolution
+
 
 ***
 
@@ -142,6 +149,18 @@ It's a me, mario!
 
 # Part 4. Basic outline and concepts
 Now that we have successfully installed and tested our environment, lets get some basic concepts down and then move onto code. For starters we will be using already included integrations. Later on, I would like to look at expanding on this section. Tweaking the reward function to incentivize the computer to take into account coin or rings for example.
+
+## Concept
+The premise here is simple. Mario will play over and over learning things as he goes. That knowledge will be passed down to future generations in the hopes they make better decisions and in turn make it further through the level.
+
+To achieve that, we are going to:
+
+1. create the environment (openai retro - integration/data.json/scenario.json)
+2. step through the environment for each genome (opencv, neat - config and stats)
+3. apply logic (neat)
+  - reward for increased x distance (heading to the end of the level)
+  - optional: add reward for increased score, coins, etc. Should make for a "better" run through
+4. once reward has been reached, terminate
 
 ## Integrations
 Setting up the environment for reinforcement learning. It enables the game be ran through via a python api. There are 3 conditions we need: start (location to begin), reward (fitness - keep going buddy!), and done (when to terminiate). For far more detail, check out the official [Game Integration Guide](https://retro.readthedocs.io/en/latest/integration.html).
@@ -272,20 +291,20 @@ if __name__ == "__main__":
 
 
 ## Other tips & tricks
-Here are a few tidbits I found while digging around.
+Here are a few tidbits I found from googling various topics and digging through the documentation.
 
 ### Replaying
 If the record variable is set, we will save a zipped bk2 playback file for each environment rendered. You can replay this recording using the included watch.py 
 
-`python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2).`
+`python3 watch.py --vid SuperMarioBros-Nes-Level1-1-000000.bk2`
 
 ### retro/examples
-[interactive mode](https://github.com/openai/retro/blob/master/retro/examples/retro_interactive.py) will let you play the game using your keyboard.
+[interactive mode](https://github.com/openai/retro/blob/master/retro/examples/retro_interactive.py) will let you play the game using your keyboard. I havent tested.
 
-[discreditizer](https://github.com/openai/retro/blob/master/retro/examples/discretizer.py) will let you can define your own set of button presses. 
+[discreditizer](https://github.com/openai/retro/blob/master/retro/examples/discretizer.py) will let you can define your own set of button presses. I havent tested.
 
 ### console.json
-You can look at the keybindings for the various emulators. The controller layouts are presented as a list of actions. 
+You can look at the keybindings for the various emulators. The controller layouts are presented as a list of actions. Documentation is very light. Not sure exactly how this is mapped.
 
 for ex: [0,0,1,0,0,0,0,1,1,1,0,0]
 
@@ -320,7 +339,8 @@ The NEAT configuration file defines the evolutionary process for our bot. It use
 
 [NEAT]
 # fitness_criterion:    the function used to compute the termination criterion from the set of genome fitnesses (max, min, mean)
-# fitness_threshold:	when the fitness_critera meets this threshold the evolution process will terminate
+# fitness_threshold:	  in our case, when fitness_current meets this threshold the evolution process will terminate
+#                       we can work inside this threshold with our game counters
 # pop_size:             the amount of individuals genomes in each generation
 # reset_on_extinction:  when all species become extinct; true: a new random one will appear, false: exception thrown
 fitness_criterion     = max
@@ -480,8 +500,19 @@ Brainstorming
 
 Notes
 - 8bit architecture, limiting memory to 1byte chunks
-- xscrollHi increases by 1 every 255 xscrollLo x distance traveled
+- xscrollHi increases by 1 every 255 xscrollLo x distance travelled
 - there appears to be a no reward zone at the start of the level
+
+- March 2021 - Results = Terminated :: I terminated the session after 777 generations and 3357 minutes (~55h). The last 25h mario moved one square. This run included additional points for score and coins. This perhaps complicated the learning by including additional variables? They always seem to get stuck at the same point. Further learning seems to dindle over time. Could be the neat-config variables?
+
+![Time vs Generation](https://github.com/andruschak/openai-gym-retro/raw/master/images/timevsgeneration.png "Time vs Generation")
+The time it took to run 30 genomes in each generation.
+
+![Fitness vs Generation](https://github.com/andruschak/openai-gym-retro/raw/master/images/fitnessvsgeneration.png "Fitness vs Generation")
+How fitness grew over time
+  - the jumps in the graph are the bonus fitness for getting increased score, a coin, incrementing xscrollHi
+  - it is interesting to see the rise at the start, dramatic fall and then average out. I would have thought that they time would increase as each generations genomes progressed further. But many runs where almost identical. Seems like not enough diversity or breeding?
+
 
 - May 2020 - Results = Failure :: Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
 
