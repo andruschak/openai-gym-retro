@@ -1,4 +1,5 @@
 # Openai-gym-retro
+Heavy work in progress - a semi organized brain dump
 
 # Table of contents
 
@@ -45,6 +46,8 @@ To do
   - species 
   - genome 
   - evolution
+  - homology
+  - 
 
 
 ***
@@ -325,6 +328,13 @@ nes.json for example:
 }
 ```
 
+Sample Input_keys.txt file extracted from one of the bk2 playbacks.
+
+```
+
+```
+
+
 ***
 
 # Part 5. Adding machine learning into the mix
@@ -333,6 +343,8 @@ Now that we have our environment working as expected, its time to add in the mac
 
 ### NEAT config 
 The NEAT configuration file defines the evolutionary process for our bot. It uses old windows INI file style which is very easy to follow. I have tried to format and comment the file to make it easier to understand. You can read about it in much more detail on the official [NEAT config](https://neat-python.readthedocs.io/en/latest/config_file.html) file documentation.
+
+
 
 ```
 # NEAT configuration file
@@ -503,20 +515,26 @@ Notes
 - xscrollHi increases by 1 every 255 xscrollLo x distance travelled
 - there appears to be a no reward zone at the start of the level
 
-- March 2021 - Results = Terminated :: I terminated the session after 777 generations and 3357 minutes (~55h). The last 25h mario moved one square. This run included additional points for score and coins. This perhaps complicated the learning by including additional variables? They always seem to get stuck at the same point. Further learning seems to dindle over time. Could be the neat-config variables?
+### Training runs
+
+Simulation #1:
+May 2020 - Results = Failure :: Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
+
+![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence2.gif "mario bane")
+
+Simulation #2
+March 2021 - Results = Terminated :: I terminated the session after 777 generations and 3357 minutes (~55h). The last 25h mario moved one square. This run included additional points for score and coins. This perhaps complicated the learning by including additional variables? They always seem to get stuck at the same point. Further learning seems to dindle over time. Could be the neat-config variables?
 
 ![Time vs Generation](https://github.com/andruschak/openai-gym-retro/raw/master/images/timevsgeneration.png "Time vs Generation")
 The time it took to run 30 genomes in each generation.
+  - Interesting to see the rise at the start, dramatic fall and then average out. I would have thought that they time would increase as each generations genomes progressed further. But many runs where almost identical. Seems like not enough diversity or breeding?
 
 ![Fitness vs Generation](https://github.com/andruschak/openai-gym-retro/raw/master/images/fitnessvsgeneration.png "Fitness vs Generation")
+
 How fitness grew over time
-  - the jumps in the graph are the bonus fitness for getting increased score, a coin, incrementing xscrollHi
-  - it is interesting to see the rise at the start, dramatic fall and then average out. I would have thought that they time would increase as each generations genomes progressed further. But many runs where almost identical. Seems like not enough diversity or breeding?
+  - The jumps in the graph are the bonus fitness for increased score, collecting a coin or incrementing xscrollHi
 
 
-- May 2020 - Results = Failure :: Mario never made it past this point in my initial training. After over 300 runs, all species stagnated and that triggered a mass extinction event. All training was lost. I modified the config-neat.cfg file afterwards to preserve at least 1 species (species_elitism)
-
-![mario bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-marios-existence2.gif "mario bane")
 
 ***
 
@@ -525,20 +543,34 @@ How fitness grew over time
 Brainstorming
 - possible to get stuck in a rocking motion - as seen in the gif
 - backtracking might be a better strategy in some cases?
-- rings can be gotten and lost; each coin grants fitness. what about loss?
-- add fitness for increased score
+- rings can be gotten and lost. what about loss?
+- add fitness for increased score?
 - add fitness for collecting power ups. some wear off, some dont
+- if sonic loses a life terminate? deduct fitness?
+- what is the gamemode variable?
 
 Notes
-- 16bit architecture, limiting memory to 2byte chunks
-- xpos variable provided to track sonics position
-- sonic will rock in place depending on the obstacle in front of him. This caused the frame counter to never reset when sonic got stuck - forcing the full 9m59s before trying again. Should do a xpos max count, if not increased over x frames, terminate.
+- 16bit architecture, memory is 2byte chunks, counters are easier to work with
+- The screen_x variable provided to track sonics position. x didn't seem accurate from my testing
+- The screen_x_end variable is the spinning signpost at the end (our target x distance)
+- Sonic will rock in place depending on the obstacle in front of him. If no increase in x distance in y frames terminate
 
-Initial training
+### Training runs
 
-- May 2020 - Results = Failure :: As with mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
+Simulation #1:
+May 2020 - Results = Failure :: As with mario, sonic never completed his initial run. There was a bug in my original counter that did not take into account rocking for an extended period of distance within a given amount of time. This triggered the DONE event, however, sonic never completed the course.
 
 ![sonic bane](https://github.com/andruschak/openai-gym-retro/raw/master/images/bane-of-sonics-existence2.gif "sonic bane")
+
+Simulation #2:
+March 8 2021 - Results = Success! :: Sonic completed the run
+   - Finished in 25 generations, 776s or ~5.38h
+   - 2 genomes completed the level in the final generation
+     - Genome: 665 , Fitness Achieved: 122320 , x: 10819 , screen_x: 10656 , screen_x_prev: 10656  score: 10 , rings: 6 , status:
+     - Genome: 668 , Fitness Achieved: 122150 , x: 10817 , screen_x: 10656 , screen_x_prev: 10656  score: 20 , rings: 64 , status:
+
+
+[![Sonic Bot](https://img.youtube.com/vi/wbVGff3ZeM/0.jpg)](https://www.youtube.com/watch?v=wbVGff3ZeM)
 
 
 ***
