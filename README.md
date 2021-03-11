@@ -570,7 +570,7 @@ March 8 2021 - Results = Success! :: Sonic completed the run
      - Genome: 668 , Fitness Achieved: 122150 , x: 10817 , screen_x: 10656 , screen_x_prev: 10656  score: 20 , rings: 64 , status:
 
 
-[![Sonic Bot](https://img.youtube.com/vi/wbVGff3ZeM/0.jpg)](https://www.youtube.com/watch?v=wbVGff3ZeM)
+[![Sonic Bot](https://img.youtube.com/vi/7wbVGff3ZeM/0.jpg)](https://www.youtube.com/watch?v=7wbVGff3ZeM)
 
 
 ***
